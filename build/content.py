@@ -172,15 +172,15 @@ PAGES = {
 
 FAQS = [
     ("Does Halo replace my DMS, CRM, or inventory tools?",
-     "No. Halo connects to the tools you already use (your DMS, VinSolutions, vAuto, and others) and makes sense of them together. Nothing gets ripped out."),
+     "No. Halo connects to the tools you already use and makes sense of them together. Nothing gets ripped out, and your team keeps working in the systems they know."),
     ("Is this another dashboard my team has to check?",
      "No. Halo sends prioritized alerts to the person who owns each fix. The point is that nobody has to go digging."),
     ("Can we start with one store?",
      "Yes. Start with a single rooftop, prove the value, then add stores at your pace. The group view fills in as more rooftops connect."),
     ("How long does setup take?",
-     "It depends on your data sources and number of rooftops. We handle the integration work; your team’s main job is confirming dealer ID mapping."),
+     "It depends on your systems and number of rooftops. We handle the integration work, so your team’s lift is light: a few confirmations, not a project."),
     ("Which systems does Halo connect to?",
-     "DMS data (including through DealerVault), vAuto, VinSolutions, Google, Meta, and Bing today, with more being added. Ask us about yours on the demo."),
+     "The systems that run your stores: DMS, CRM, inventory, and marketing platforms, with more being added. Bring your list and we’ll walk through it with you."),
     ("Can we set alerts to match how we run our stores?",
      "Yes. Thresholds, targets, and who gets which alert are set per rooftop and per group, and Halo learns your baselines over time."),
     ("Who owns the data?",
