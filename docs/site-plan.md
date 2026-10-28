@@ -62,7 +62,7 @@ The brief caps scope, so "human, not AI-generated" comes from execution, not add
 
 - Video: existing film (re-encoded 107 MB → 10.9 MB, 1080p). Poster = Marketing Campaigns frame.
 - Demo requests: email to david@drivehalo.ai (dedicated /request-a-demo/ page, no popup).
-- Build: invite-only — all v2 pages are published with a shared password; live homepage untouched.
+- "Invite only" = sales positioning (select dealer groups), reflected in copy. Home (v2) + Request a Demo are public; other v2 pages stay password-protected until content is final.
 - About, Halo Effect example, Security claims: client fills via `docs/client-prompts.md`.
 
 ## Open items

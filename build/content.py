@@ -22,7 +22,7 @@ NAV = [
 ]
 
 HOME = {
-    "label": "Halo OS — Automotive Intelligence",
+    "label": "Halo OS — By invitation, for select dealer groups",
     "h1": "Total Command of Your Dealership.",
     "tagline": "Your Dealership. <em>Your Data.</em> Powered by AI.",
     "primary": "Request a demo →",
@@ -32,7 +32,7 @@ HOME = {
 
 CTA = {
     "h2": "See Halo on your own stores’ numbers.",
-    "body": "A short walkthrough built around your rooftops, your systems, and the questions you’re already asking.",
+    "body": "Halo onboards a limited number of dealer groups by invitation. Request a demo to see if yours is a fit.",
     "button": "Request a demo →",
 }
 
@@ -192,12 +192,12 @@ PAGES["faqs"]["body_html"] = '<div class="hv2-faq">' + "".join(
     for i, (q, a) in enumerate(FAQS, 1)) + "</div>"
 
 DEMO = {
-    "label": "Request a demo",
+    "label": "Request a demo · By invitation",
     "h1": "See Halo on your own numbers.",
-    "lead": "Tell us a little about your group and we’ll set up a walkthrough around your rooftops.",
+    "lead": "Halo is invite-only. We onboard a limited number of dealer groups at a time so every rollout gets the attention it needs. Tell us about yours.",
     "next": [
-        "A real person reads every request. No automated drip.",
-        "We’ll reply to find a time that works for you.",
+        "A real person reviews every request. No automated drip.",
+        "If it looks like a fit, we’ll reach out to schedule a walkthrough.",
         "The walkthrough focuses on your stores, not a canned slide deck.",
     ],
     "button": "Request my demo →",

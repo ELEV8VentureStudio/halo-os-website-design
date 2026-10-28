@@ -22,6 +22,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "build" / "out"
 CA = "/root/.ccr/ca-bundle.crt"
 PASSWORD = os.environ.get("HALO_PREVIEW_PASSWORD", "HaloPreview27")
+# Pages open to the public; everything else stays behind PASSWORD until content is final.
+PUBLIC = {"home-v2", "request-a-demo"}
 CSS_START = "/* ==== HALO-V2 START ==== */"
 CSS_END = "/* ==== HALO-V2 END ==== */"
 
@@ -306,7 +308,7 @@ def upsert_page(slug, title, data, dry):
         "title": title,
         "slug": slug,
         "status": "publish",
-        "password": PASSWORD,
+        "password": "" if slug in PUBLIC else PASSWORD,
         "meta": {
             **ASTRA_META,
             "_elementor_edit_mode": "builder",
