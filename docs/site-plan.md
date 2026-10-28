@@ -75,7 +75,8 @@ The brief caps scope, so "human, not AI-generated" comes from execution, not add
 
 ## Open items
 
-1. Footer links to Privacy Policy (page 3, still draft → 404) and Terms of Use (no page yet).
-2. About: verified one-line experience for Trace Przybylowicz, David Ortiz, Phillip Rather; headshots for all four.
-3. The Halo Effect: real pilot example (Prompt 2). Security: claim verification (Prompt 3).
-4. Original unblurred `Halo-4.mp4` (media 1162) is still in the Media Library at a public URL.
+1. Legal review: `docs/legal.md` (Privacy Policy + Terms). Needs legal entity name, mailing address, governing-law state, dedicated privacy inbox.
+2. Security page: "activity log" claim depends on the admin log view shipping (client note).
+3. About: verified one-line experience for Trace Przybylowicz and Phillip Rather; headshots for all four.
+4. The Halo Effect: real pilot example (Prompt 2).
+5. Original unblurred `Halo-4.mp4` (media 1162) is still in the Media Library at a public URL.

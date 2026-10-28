@@ -120,24 +120,29 @@ PAGES = {
         "h1": "Your data. Your control.",
         "lead": "Dealer groups should ask hard questions before connecting anything to their DMS. Here are our answers.",
         "visual_html": (
-            '<div class="hv2-diagram" role="img" aria-label="Your systems feed Halo inside an environment your group controls. Outside AI model training is not connected.">'
-            '<div class="env"><span class="t">Your group’s environment</span>'
+            '<div class="hv2-diagram hv2-diagram--v2" role="img" aria-label="Your systems feed Halo OS inside your group’s private environment, managed by Halo. AI requests go out to Google Cloud and come back, and are not used for training.">'
+            '<div class="env"><span class="t">Your group’s private environment, managed by Halo</span>'
             '<div class="srcs"><div class="src">DMS</div><div class="src">CRM</div><div class="src">Inventory</div><div class="src">Marketing</div></div>'
             '<div class="flow">↓</div>'
-            '<div class="core">Halo OS · alerts, actions, audit trail</div></div>'
-            '<div class="out"><s>Outside AI model training</s><br>not connected</div>'
+            '<div class="core">Halo OS · alerts, actions, activity log</div></div>'
+            '<div class="link" aria-hidden="true">⇄</div>'
+            '<div class="ext"><b>AI processing</b>via Google Cloud<span>Not used for training</span></div>'
             '</div>'
         ),
-        "visual_caption": f"How your data flows. {ph('Client to confirm all statements on this page before launch')}",
+        "visual_caption": "How your data flows. Halo runs inside your group’s own environment. AI requests go to Google Cloud and come back, and aren’t used to train models.",
         "rows": [
-            {"kicker": "Ownership", "title": "Your data stays yours.",
-             "body": "DMS, CRM, and inventory data lives in a dealer-owned environment, kept separate from every other group."},
+            {"kicker": "Isolation", "title": "Your own private environment.",
+             "body": "Every dealer group runs in its own private Google Cloud environment. Your DMS, CRM and inventory data is stored there, separate from every other dealer group."},
             {"kicker": "Access", "title": "You decide who sees what.",
-             "body": "One admin panel controls access by role and by rooftop, with a full audit trail of who did what."},
-            {"kicker": "AI safeguards", "title": "Your data doesn’t train anyone else’s AI.",
-             "body": "Deal, customer, and operational data isn’t sent to outside model-training pipelines."},
-            {"kicker": "Privacy", "title": "No selling. No pooling.",
-             "body": "We don’t sell your data or combine it with other dealer groups’ data."},
+             "body": "One admin panel controls who can see what, by role and by rooftop, with an activity log of who did what. Two-factor login protects every account."},
+            {"kicker": "AI safeguards", "title": "Your data doesn’t train AI models.",
+             "body": "Your deal, customer and operational data isn’t used to train AI models. Halo’s AI runs through Google Cloud, under terms that exclude training on customer data."},
+            {"kicker": "Privacy", "title": "We don’t sell your data.",
+             "body": "Your store’s operations aren’t shared with or used to help other dealer groups. Benchmarks come from industry sources and may include anonymized, combined data."},
+            {"kicker": "Encryption", "title": "Encrypted and hosted in the U.S.",
+             "body": "Your data is encrypted in storage and in transit, and hosted in the United States."},
+            {"kicker": "Deployment", "title": "Your cloud, or your servers.",
+             "body": "Want it in your own cloud account? We’ll set Halo up in your group’s own Google Cloud or AWS account. Prefer AI on your own servers? We can set up a private AI model that runs entirely on your infrastructure."},
         ],
     },
     "about": {
@@ -185,8 +190,8 @@ FAQS = [
      "The systems that run your stores: DMS, CRM, inventory, and marketing platforms, with more being added. Bring your list and we’ll walk through it with you."),
     ("Can we set alerts to match how we run our stores?",
      "Yes. Thresholds, targets, and who gets which alert are set per rooftop and per group, and Halo learns your baselines over time."),
-    ("Who owns the data?",
-     f'You do. See <a href="{SITE}/security/">Security &amp; Governance</a> for how it’s stored, who can access it, and how AI is handled.'),
+    ("What happens to our data?",
+     f'It stays in its own isolated environment, separate from every other dealer group. We don’t sell it, and it isn’t used to train AI models. See <a href="{SITE}/security/">Security &amp; Governance</a> for the details.'),
 ]
 
 PAGES["faqs"]["body_html"] = '<div class="hv2-faq">' + "".join(
@@ -213,7 +218,7 @@ FOOTER = {
                                         ("How It Works", f"{SITE}/how-it-works/"), ("Security", f"{SITE}/security/")]},
         {"title": "Company", "links": [("About", f"{SITE}/about/"), ("FAQs", f"{SITE}/faqs/"),
                                         ("Join the Wait List", f"{SITE}/waitlist/")]},
-        {"title": "Legal", "links": [("Privacy Policy", f"{SITE}/privacy-policy/")]},  # add Terms of Use once it exists
+        {"title": "Legal", "links": [("Privacy Policy", f"{SITE}/privacy-policy/"), ("Terms of Use", f"{SITE}/terms/")]},
     ],
     "legal": "© 2026 Halo OS. All rights reserved.",
     "domain": "drivehalo.ai",
@@ -221,68 +226,95 @@ FOOTER = {
 
 
 # --------------------------------------------------------------------------
-# Privacy Policy — website + wait list scope. Drafted for legal review.
-# Reflects what the site actually runs (checked 2026-10-28): SiteGround hosting,
-# Cloudflare Web Analytics (cookieless), Google Fonts, Elementor wait list form.
-# No advertising pixels, no Google Analytics, no visitor cookies.
+# Legal pages — client copy ("halo-security-privacy-terms.md", Oct 28 2026),
+# drafts for legal review. Placeholders resolved for the live site:
+#   [Halo legal entity] -> "Halo OS"   [privacy email]/[Email] -> LEGAL_CONTACT
+#   [Mailing address], governing-law [state] -> omitted until provided
+# Correction: client draft said the site uses Google Analytics. It doesn't
+# (checked 2026-10-28): Cloudflare Web Analytics (cookieless) + Google Fonts.
 # --------------------------------------------------------------------------
-PRIVACY_UPDATED = "October 28, 2026"
-PRIVACY_CONTACT = "david@drivehalo.ai"
+LEGAL_UPDATED = "October 28, 2026"
+LEGAL_CONTACT = "david@drivehalo.ai"
+MAIL = f'<a href="mailto:{LEGAL_CONTACT}">{LEGAL_CONTACT}</a>'
 
 PRIVACY_SECTIONS = [
-    ("Who we are and what this policy covers", f"""
-<p>This Privacy Policy explains how Halo OS (“Halo,” “we,” “us”) collects, uses, and shares personal information when you visit drivehalo.ai (the “Site”) or join our wait list.</p>
-<p>It does not cover data that dealerships process through the Halo OS platform. That data is governed by the written agreement between Halo and each dealership, under which Halo acts on the dealership’s behalf and processes its data only as that agreement allows.</p>"""),
-    ("Information we collect", """
-<p><strong>Information you give us.</strong> When you join the wait list we collect your name, dealership or group name, number of rooftops, role, work email, and phone number. If you email us, we receive whatever you choose to include.</p>
-<p><strong>Information collected automatically.</strong> Like most websites, our hosting and security providers record basic technical information when you visit, such as IP address, browser and device type, pages requested, referring page, and the date and time of the request. We use privacy-focused, cookieless analytics to understand overall traffic, such as page views and visit counts, without tracking you across other websites.</p>"""),
+    ("Who we are", """
+<p>Halo OS (“Halo,” “we”) provides an AI operating system for automotive dealers. This policy explains how we handle information on our website and in our platform.</p>"""),
+    ("Two kinds of information", """
+<ul>
+<li><strong>Information about you as a website visitor or user:</strong> your name, work email, phone number, company, role, and number of rooftops when you join the wait list, and how you use our website and platform.</li>
+<li><strong>Dealer data:</strong> information our dealer customers connect to Halo, such as deal, vehicle, customer and operational data. We process it on behalf of our dealer customers, under our contracts with them. If you’re a car buyer whose information a dealer holds, contact that dealer.</li>
+</ul>"""),
     ("How we use information", """
 <ul>
-<li>To review wait list requests and contact you about Halo, including scheduling a walkthrough.</li>
-<li>To respond to your questions and messages.</li>
-<li>To operate, secure, maintain, and improve the Site.</li>
-<li>To detect and prevent fraud, abuse, and security incidents.</li>
-<li>To comply with legal obligations and enforce our rights.</li>
-</ul>
-<p>We do not use the personal information we collect through the Site to train AI models.</p>"""),
-    ("How we share information", """
-<p>We do not sell your personal information or share it for cross-context behavioral advertising. We share it only:</p>
-<ul>
-<li><strong>With service providers</strong> who help us run the Site and our business, such as website hosting, content delivery and security, analytics, and email. They may use it only to provide services to us.</li>
-<li><strong>With affiliated companies</strong> under common ownership or control with Halo, for the purposes described in this policy.</li>
-<li><strong>For legal reasons</strong>, when we believe disclosure is required by law, legal process, or to protect the rights, property, or safety of Halo, our users, or others.</li>
-<li><strong>In a business transaction</strong>, such as a merger, acquisition, financing, or sale of assets, subject to standard confidentiality protections.</li>
-<li><strong>With your consent</strong> or at your direction.</li>
+<li>To provide, secure and support the Halo platform</li>
+<li>To respond to inquiries and requests for early access</li>
+<li>To improve our website and platform</li>
+<li>To create anonymized, combined industry benchmarks that don’t identify any dealer, store or person</li>
 </ul>"""),
-    ("Cookies and similar technologies", """
-<p>The Site does not use advertising cookies or third-party tracking pixels, and our analytics do not set cookies. We may use strictly necessary cookies to keep the Site secure and working, for example to protect forms from spam. You can block or delete cookies in your browser settings; parts of the Site may not work as intended if you do.</p>
-<p>The Site loads fonts from Google Fonts, which means your browser connects to Google’s servers and shares your IP address with Google when a page loads.</p>"""),
-    ("How long we keep information", """
-<p>We keep wait list and contact information for as long as needed to evaluate and follow up on your request and maintain our business relationship, and then for a reasonable period afterward unless you ask us to delete it sooner. We keep technical logs for a limited time for security and troubleshooting. We may keep information longer when the law requires it.</p>"""),
-    ("How we protect information", """
-<p>We use reasonable administrative, technical, and physical safeguards designed to protect personal information, including encrypted connections (HTTPS) and access controls. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>"""),
+    ("What we don’t do", """
+<ul>
+<li>We don’t sell personal information or dealer data.</li>
+<li>We don’t share one dealer group’s data with another, or use a group’s specific operations to help another group.</li>
+<li>Dealer data isn’t used to train AI models. Our AI runs through Google Cloud, under terms that exclude training on customer data.</li>
+</ul>"""),
+    ("Who we share information with", """
+<p>Only service providers that help us run Halo, such as Google Cloud for hosting and AI processing, under contracts that limit how they use it. We may also disclose information if the law requires it, or as part of a merger or acquisition, subject to this policy.</p>"""),
+    ("Security", f"""
+<p>Each dealer group’s data is kept in its own isolated environment in the United States, encrypted in storage and in transit, and protected by two-factor login and role-based access. See our <a href="{SITE}/security/">Security &amp; Governance</a> page.</p>"""),
+    ("Retention", """
+<p>We keep dealer data for the length of our contract with the dealer, then return and delete it as the contract provides. We keep website and account information as long as needed for the purposes above.</p>"""),
     ("Your choices and rights", f"""
-<p>You can ask us to access, correct, or delete the personal information we hold about you, or to stop contacting you, by emailing <a href="mailto:{PRIVACY_CONTACT}">{PRIVACY_CONTACT}</a>. Every marketing email we send includes a way to opt out.</p>
-<p>Depending on where you live, including certain U.S. states, you may have additional rights, such as the right to know what personal information we collect, to obtain a copy, to correct it, to delete it, and to opt out of its sale or sharing (we do not sell or share it). We will not discriminate against you for exercising these rights. We may need to verify your identity before acting on a request, and you may use an authorized agent where the law allows.</p>"""),
-    ("Children", """
-<p>The Site is intended for business professionals and is not directed to children under 16. We do not knowingly collect personal information from children. If you believe a child has provided us information, contact us and we will delete it.</p>"""),
-    ("Where information is processed", """
-<p>Halo is based in the United States, and we process and store information in the United States. If you access the Site from outside the U.S., your information will be transferred to and processed in the U.S.</p>"""),
-    ("Changes to this policy", """
-<p>We may update this policy from time to time. When we do, we will change the “Last updated” date below and, if the changes are significant, provide additional notice on the Site.</p>"""),
-    ("Contact us", f"""
-<p>Questions or requests about this policy or your personal information: <a href="mailto:{PRIVACY_CONTACT}">{PRIVACY_CONTACT}</a>.</p>"""),
+<p>You can ask to access, correct or delete your personal information, or opt out of marketing emails, by contacting {MAIL}. Depending on where you live, you may have more rights under state law.</p>"""),
+    ("Cookies and analytics", """
+<p>Our website uses Cloudflare Web Analytics, a privacy-focused tool that doesn’t use cookies, to understand how visitors use it. The site also loads fonts from Google Fonts, which shares your IP address with Google when a page loads.</p>"""),
+    ("Contact", f"<p>{MAIL}</p>"),
 ]
 
-PAGES["privacy-policy"] = {
-    "title": "Privacy Policy",
-    "num": "",
-    "name": "Legal",
-    "h1": "Privacy Policy",
-    "lead": "What we collect when you visit drivehalo.ai or join the wait list, how we use it, and the choices you have.",
-    "cta": False,
-    "legal_html": '<div class="hv2-legal">' + "".join(
+TERMS_SECTIONS = [
+    ("Agreement to these terms", """
+<p>By using drivehalo.ai (the “Site”), you agree to these Terms of Use. If you don’t agree, don’t use the Site. The Site is operated by Halo OS (“Halo,” “we”).</p>"""),
+    ("The Halo platform", """
+<p>These terms cover the Site only. Use of the Halo platform is governed by your organization’s agreement with Halo, which controls if it conflicts with these terms.</p>"""),
+    ("Using the Site", """
+<p>You may use the Site to learn about Halo and contact us. You agree not to:</p>
+<ul>
+<li>Copy, scrape or resell the Site’s content</li>
+<li>Interfere with the Site’s operation or security</li>
+<li>Try to access parts of the Site or Halo’s systems you aren’t authorized to use</li>
+<li>Submit false information, or information you don’t have the right to share</li>
+</ul>"""),
+    ("Early access and inquiries", f"""
+<p>If you request early access, a demo or more information, what you submit must be accurate. We handle it as described in our <a href="{SITE}/privacy-policy/">Privacy Policy</a>.</p>"""),
+    ("Our content", """
+<p>The Site’s text, design, logos and graphics belong to Halo or its licensors. The Halo name and logo are Halo’s trademarks and may not be used without our written permission.</p>"""),
+    ("Third-party links", """
+<p>The Site may link to other websites. We don’t control them and aren’t responsible for their content or practices.</p>"""),
+    ("Disclaimers", """
+<p>The Site and its content are provided “as is” for general information. We work to keep it accurate but don’t promise it is complete, current or error-free.</p>"""),
+    ("Limitation of liability", """
+<p>To the extent the law allows, Halo isn’t liable for indirect, incidental or consequential damages arising from your use of the Site.</p>"""),
+    ("Changes", """
+<p>We may update these terms. The date below shows when they last changed. Continuing to use the Site means you accept the updated terms.</p>"""),
+    # ("Governing law", "<p>These terms are governed by the laws of [state].</p>"),  # pending legal
+    ("Contact", f"<p>{MAIL}</p>"),
+]
+
+
+def legal_html(sections):
+    return '<div class="hv2-legal">' + "".join(
         f'<section><h2><span class="n">{i:02d}</span>{h}</h2>{body}</section>'
-        for i, (h, body) in enumerate(PRIVACY_SECTIONS, 1)
-    ) + f'<p class="updated">Last updated: {PRIVACY_UPDATED}</p></div>',
+        for i, (h, body) in enumerate(sections, 1)
+    ) + f'<p class="updated">Last updated: {LEGAL_UPDATED}</p></div>'
+
+
+PAGES["privacy-policy"] = {
+    "title": "Privacy Policy", "num": "", "name": "Legal", "h1": "Privacy Policy",
+    "lead": "How Halo handles information on our website and in our platform, and the choices you have.",
+    "cta": False, "legal_html": legal_html(PRIVACY_SECTIONS),
+}
+PAGES["terms"] = {
+    "title": "Terms of Use", "num": "", "name": "Legal", "h1": "Terms of Use",
+    "lead": "The rules for using drivehalo.ai. Use of the Halo platform itself is covered by your organization’s agreement with Halo.",
+    "cta": False, "legal_html": legal_html(TERMS_SECTIONS),
 }
