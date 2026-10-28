@@ -214,7 +214,10 @@ def build_pillar(key):
                                con("hv2-story-v", text(st["body"], "hv2-body"))),
                            heading(st["people_title"], "h2", "hv2-h2 hv2-rows-intro"),
                            html(people_html(st["people"]))))
-    els.append(demo_cta())
+    if c.get("legal_html"):
+        els.append(section("hv2-rows", html(c["legal_html"])))
+    if c.get("cta", True):
+        els.append(demo_cta())
     return els
 
 

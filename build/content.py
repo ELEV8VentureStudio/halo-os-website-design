@@ -156,7 +156,8 @@ PAGES = {
                 # (name, title, experience or "" until verified)
                 ("Trace Przybylowicz", "Managing Partner", ""),
                 ("Joe Castle", "Managing Partner", "Founder and CEO of Castle Automotive Group, with extensive automotive retail leadership experience."),
-                ("David Ortiz", "Managing Partner", ""),
+                ("David Ortiz", "Managing Partner",
+                 "30+ year automotive operator, entrepreneur, and builder. He leads sales and marketing across 18 Castle Automotive Group rooftops and has founded ventures spanning dealership marketing, analytics, and AI, bringing the operator’s view and the builder’s toolkit to Halo."),
                 ("Phillip Rather", "Managing Partner", ""),
             ],
         },
@@ -212,8 +213,76 @@ FOOTER = {
                                         ("How It Works", f"{SITE}/how-it-works/"), ("Security", f"{SITE}/security/")]},
         {"title": "Company", "links": [("About", f"{SITE}/about/"), ("FAQs", f"{SITE}/faqs/"),
                                         ("Join the Wait List", f"{SITE}/waitlist/")]},
-        {"title": "Legal", "links": [("Privacy Policy", f"{SITE}/privacy-policy/"), ("Terms of Use", f"{SITE}/terms/")]},
+        {"title": "Legal", "links": [("Privacy Policy", f"{SITE}/privacy-policy/")]},  # add Terms of Use once it exists
     ],
     "legal": "© 2026 Halo OS. All rights reserved.",
     "domain": "drivehalo.ai",
+}
+
+
+# --------------------------------------------------------------------------
+# Privacy Policy — website + wait list scope. Drafted for legal review.
+# Reflects what the site actually runs (checked 2026-10-28): SiteGround hosting,
+# Cloudflare Web Analytics (cookieless), Google Fonts, Elementor wait list form.
+# No advertising pixels, no Google Analytics, no visitor cookies.
+# --------------------------------------------------------------------------
+PRIVACY_UPDATED = "October 28, 2026"
+PRIVACY_CONTACT = "david@drivehalo.ai"
+
+PRIVACY_SECTIONS = [
+    ("Who we are and what this policy covers", f"""
+<p>This Privacy Policy explains how Halo OS (“Halo,” “we,” “us”) collects, uses, and shares personal information when you visit drivehalo.ai (the “Site”) or join our wait list.</p>
+<p>It does not cover data that dealerships process through the Halo OS platform. That data is governed by the written agreement between Halo and each dealership, under which Halo acts on the dealership’s behalf and processes its data only as that agreement allows.</p>"""),
+    ("Information we collect", """
+<p><strong>Information you give us.</strong> When you join the wait list we collect your name, dealership or group name, number of rooftops, role, work email, and phone number. If you email us, we receive whatever you choose to include.</p>
+<p><strong>Information collected automatically.</strong> Like most websites, our hosting and security providers record basic technical information when you visit, such as IP address, browser and device type, pages requested, referring page, and the date and time of the request. We use privacy-focused, cookieless analytics to understand overall traffic, such as page views and visit counts, without tracking you across other websites.</p>"""),
+    ("How we use information", """
+<ul>
+<li>To review wait list requests and contact you about Halo, including scheduling a walkthrough.</li>
+<li>To respond to your questions and messages.</li>
+<li>To operate, secure, maintain, and improve the Site.</li>
+<li>To detect and prevent fraud, abuse, and security incidents.</li>
+<li>To comply with legal obligations and enforce our rights.</li>
+</ul>
+<p>We do not use the personal information we collect through the Site to train AI models.</p>"""),
+    ("How we share information", """
+<p>We do not sell your personal information or share it for cross-context behavioral advertising. We share it only:</p>
+<ul>
+<li><strong>With service providers</strong> who help us run the Site and our business, such as website hosting, content delivery and security, analytics, and email. They may use it only to provide services to us.</li>
+<li><strong>With affiliated companies</strong> under common ownership or control with Halo, for the purposes described in this policy.</li>
+<li><strong>For legal reasons</strong>, when we believe disclosure is required by law, legal process, or to protect the rights, property, or safety of Halo, our users, or others.</li>
+<li><strong>In a business transaction</strong>, such as a merger, acquisition, financing, or sale of assets, subject to standard confidentiality protections.</li>
+<li><strong>With your consent</strong> or at your direction.</li>
+</ul>"""),
+    ("Cookies and similar technologies", """
+<p>The Site does not use advertising cookies or third-party tracking pixels, and our analytics do not set cookies. We may use strictly necessary cookies to keep the Site secure and working, for example to protect forms from spam. You can block or delete cookies in your browser settings; parts of the Site may not work as intended if you do.</p>
+<p>The Site loads fonts from Google Fonts, which means your browser connects to Google’s servers and shares your IP address with Google when a page loads.</p>"""),
+    ("How long we keep information", """
+<p>We keep wait list and contact information for as long as needed to evaluate and follow up on your request and maintain our business relationship, and then for a reasonable period afterward unless you ask us to delete it sooner. We keep technical logs for a limited time for security and troubleshooting. We may keep information longer when the law requires it.</p>"""),
+    ("How we protect information", """
+<p>We use reasonable administrative, technical, and physical safeguards designed to protect personal information, including encrypted connections (HTTPS) and access controls. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>"""),
+    ("Your choices and rights", f"""
+<p>You can ask us to access, correct, or delete the personal information we hold about you, or to stop contacting you, by emailing <a href="mailto:{PRIVACY_CONTACT}">{PRIVACY_CONTACT}</a>. Every marketing email we send includes a way to opt out.</p>
+<p>Depending on where you live, including certain U.S. states, you may have additional rights, such as the right to know what personal information we collect, to obtain a copy, to correct it, to delete it, and to opt out of its sale or sharing (we do not sell or share it). We will not discriminate against you for exercising these rights. We may need to verify your identity before acting on a request, and you may use an authorized agent where the law allows.</p>"""),
+    ("Children", """
+<p>The Site is intended for business professionals and is not directed to children under 16. We do not knowingly collect personal information from children. If you believe a child has provided us information, contact us and we will delete it.</p>"""),
+    ("Where information is processed", """
+<p>Halo is based in the United States, and we process and store information in the United States. If you access the Site from outside the U.S., your information will be transferred to and processed in the U.S.</p>"""),
+    ("Changes to this policy", """
+<p>We may update this policy from time to time. When we do, we will change the “Last updated” date below and, if the changes are significant, provide additional notice on the Site.</p>"""),
+    ("Contact us", f"""
+<p>Questions or requests about this policy or your personal information: <a href="mailto:{PRIVACY_CONTACT}">{PRIVACY_CONTACT}</a>.</p>"""),
+]
+
+PAGES["privacy-policy"] = {
+    "title": "Privacy Policy",
+    "num": "",
+    "name": "Legal",
+    "h1": "Privacy Policy",
+    "lead": "What we collect when you visit drivehalo.ai or join the wait list, how we use it, and the choices you have.",
+    "cta": False,
+    "legal_html": '<div class="hv2-legal">' + "".join(
+        f'<section><h2><span class="n">{i:02d}</span>{h}</h2>{body}</section>'
+        for i, (h, body) in enumerate(PRIVACY_SECTIONS, 1)
+    ) + f'<p class="updated">Last updated: {PRIVACY_UPDATED}</p></div>',
 }
