@@ -58,12 +58,15 @@ The brief caps scope, so "human, not AI-generated" comes from execution, not add
 - Replace "Join Waitlist" with "Request a Demo" site-wide.
 - Fix dead `#` links, the stray bar over the video, the empty card, the duplicated Executive View bullet, and the monospace stat text.
 
-## Open items (client)
+## Decisions (2026-10-28)
 
-1. Is `Halo-4.mp4` (Apr 2026) the completed video, or is a new cut coming?
-2. Demo routing: who receives leads, and which CRM?
-3. About page: company story + leadership names, titles, headshots.
-4. Halo Effect: one real pilot example, or approval for a labeled illustrative one.
-5. Security claims: confirm what is verifiable today.
-6. Terms of Use copy.
-7. Is drivehalo.ai public/pre-launch? Is `castlea6.sg-host.com` the same install?
+- Video: existing film (re-encoded 107 MB → 10.9 MB, 1080p). Poster = Marketing Campaigns frame.
+- Demo requests: email to david@drivehalo.ai (dedicated /request-a-demo/ page, no popup).
+- Build: invite-only — all v2 pages are published with a shared password; live homepage untouched.
+- About, Halo Effect example, Security claims: client fills via `docs/client-prompts.md`.
+
+## Open items
+
+1. The film shows real-looking customer names/phones on the Service screen (~0:40). Recommend blurring that shot before launch.
+2. Terms of Use page does not exist; Privacy Policy is still a draft (footer links point to both).
+3. Launch steps: set Home (v2) as front page, swap header/footer conditions to entire site, remove passwords, retire old pages.
