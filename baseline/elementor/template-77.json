@@ -1,0 +1,204 @@
+{
+ "id": 77,
+ "title": "Elementor Footer #77",
+ "type": "footer",
+ "conditions": [
+  "include/general"
+ ],
+ "_elementor_data": [
+  {
+   "id": "d623e51",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "background_background": "classic",
+    "background_overlay_background": "classic",
+    "background_overlay_image": {
+     "url": "",
+     "id": "",
+     "size": "thumbnail",
+     "alt": "",
+     "source": "library"
+    },
+    "background_overlay_repeat": "repeat",
+    "background_overlay_size": "auto",
+    "overlay_blend_mode": "overlay",
+    "border_border": "solid",
+    "border_width": {
+     "unit": "px",
+     "top": "1",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding": {
+     "unit": "px",
+     "top": "30",
+     "right": "0",
+     "bottom": "30",
+     "left": "0",
+     "isLinked": false
+    },
+    "__globals__": {
+     "background_color": "",
+     "border_color": ""
+    },
+    "box_shadow_box_shadow_type": "yes",
+    "_element_id": "waitlist",
+    "background_color": "#080A0C",
+    "border_color": "#FFFFFF12"
+   },
+   "elements": [
+    {
+     "id": "5a8ebf8",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row"
+     },
+     "elements": [
+      {
+       "id": "7c19367",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_justify_content": "center",
+        "width": {
+         "unit": "%",
+         "size": 75,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "3d752e8",
+         "elType": "widget",
+         "settings": {
+          "image": {
+           "url": "http://drivehalo.ai/wp-content/uploads/2026/01/Halo-Logo-w-Underline_White.png",
+           "id": 154,
+           "size": "",
+           "alt": "",
+           "source": "library"
+          },
+          "width": {
+           "unit": "%",
+           "size": 65,
+           "sizes": []
+          },
+          "space": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "_padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "align": "start"
+         },
+         "elements": [],
+         "widgetType": "image"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "fafce16",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 45
+        },
+        "flex_justify_content": "center",
+        "flex_align_items": "center",
+        "_flex_size": "none",
+        "_element_width": "initial"
+       },
+       "elements": [
+        {
+         "id": "4c273ce",
+         "elType": "widget",
+         "settings": {
+          "menu": "footer-menu",
+          "nav_menu_divider": "yes",
+          "nav_menu_divider_weight": {
+           "unit": "px",
+           "size": 0.05,
+           "sizes": []
+          },
+          "__globals__": {
+           "color_menu_item": "globals/colors?id=text",
+           "nav_menu_divider_color": "globals/colors?id=text"
+          },
+          "pointer": "none",
+          "menu_typography_typography": "custom",
+          "menu_typography_font_family": "Syne",
+          "menu_typography_font_weight": "300"
+         },
+         "elements": [],
+         "widgetType": "nav-menu"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "bcba85a",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_justify_content": "center",
+        "width": {
+         "unit": "%",
+         "size": 75,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "f61097e",
+         "elType": "widget",
+         "settings": {
+          "align": "end",
+          "typography_typography": "custom",
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": -1.2,
+           "sizes": []
+          },
+          "_padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          },
+          "__dynamic__": {
+           "editor": "[elementor-tag id=\"42f6d3e\" name=\"current-date-time\" settings=\"%7B%22date_format%22%3A%22custom%22%2C%22custom_format%22%3A%22Y%22%2C%22before%22%3A%22%26copy%3B%20%26nbsp%3B%22%2C%22after%22%3A%22%20%26nbsp%3BHalo%20OS%20%26nbsp%3B%20%20%26sdot%3B%20%26nbsp%3B%20drivehalo.ai%20%26nbsp%3B%20%26trade%3B%22%7D\"]"
+          },
+          "__globals__": {
+           "text_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": [],
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  }
+ ]
+}

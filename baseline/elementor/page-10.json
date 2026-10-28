@@ -1,0 +1,3770 @@
+{
+ "id": 10,
+ "slug": "elementor-10",
+ "title": "Elementor #10",
+ "modified": "2026-06-11T15:55:25",
+ "_elementor_data": [
+  {
+   "id": "c95f88a",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_align_items": "center",
+    "css_classes": "halo-grid halo-glow",
+    "custom_css": "selector {\n  padding: 160px 48px 100px;\n  position: relative;\n  overflow: hidden;\n  text-align: center;\n}"
+   },
+   "elements": [
+    {
+     "id": "885e20f",
+     "elType": "widget",
+     "settings": {
+      "editor": "Your Dealership. Your Data. Powered by AI.",
+      "align": "center",
+      "_css_classes": "halo-badge"
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "9b86278",
+     "elType": "widget",
+     "settings": {
+      "title": "One OS. Every Rooftop. <br><span style=\"color:#00d2b4\">Total Control.</span>",
+      "header_size": "h1",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 72,
+       "sizes": []
+      },
+      "__globals__": {
+       "title_color": "globals/colors?id=text"
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 32,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "1870b12",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "width": {
+       "unit": "px",
+       "size": 600,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "315e4c8",
+       "elType": "widget",
+       "settings": {
+        "editor": "Unify your systems and data with real-time AI that identifies performance gaps and opportunities\u2014protecting revenue, reducing waste, and improving execution across every profit center.",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "f03d571",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "width": {
+       "unit": "%",
+       "size": 60,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "0a55874",
+       "elType": "container",
+       "settings": {
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "b549480",
+         "elType": "widget",
+         "settings": {
+          "text": "Join the Waitlist",
+          "align": "center",
+          "background_color": "#02010100",
+          "_css_classes": "halo-btn",
+          "__globals__": {
+           "button_text_color": "globals/colors?id=42cdd5b"
+          }
+         },
+         "elements": [],
+         "widgetType": "button"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "0794cbb",
+       "elType": "container",
+       "settings": {
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "9017169",
+         "elType": "widget",
+         "settings": {
+          "text": "The Halo Effect",
+          "align": "center",
+          "background_color": "#02010100",
+          "_css_classes": "halo-btn-ghost",
+          "__globals__": {
+           "button_text_color": ""
+          }
+         },
+         "elements": [],
+         "widgetType": "button"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "214bdb2",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "content_width": "full",
+    "background_background": "classic",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    },
+    "__globals__": {
+     "background_color": "",
+     "background_overlay_color": "globals/colors?id=ba83fae"
+    },
+    "background_color": "#080A0C",
+    "background_overlay_color": "#080A0C",
+    "background_overlay_opacity": {
+     "unit": "px",
+     "size": 1,
+     "sizes": []
+    }
+   },
+   "elements": [
+    {
+     "id": "3dbcdc8",
+     "elType": "widget",
+     "settings": {
+      "video_type": "hosted",
+      "youtube_url": "https://www.youtube.com/watch?v=XHOmBV4js_E",
+      "vimeo_url": "https://vimeo.com/235215203",
+      "dailymotion_url": "https://www.dailymotion.com/video/x6tqhqb",
+      "hosted_url": {
+       "url": "http://drivehalo.ai/wp-content/uploads/2026/04/Halo-4.mp4",
+       "id": 1162,
+       "size": "",
+       "alt": "",
+       "source": "library"
+      },
+      "videopress_url": "https://videopress.com/v/ZCAOzTNk",
+      "autoplay": "yes",
+      "play_on_mobile": "yes",
+      "mute": "yes",
+      "loop": "yes",
+      "controls": "",
+      "image_overlay": {
+       "url": "",
+       "id": "",
+       "size": "",
+       "alt": "",
+       "source": "library"
+      },
+      "_element_id": "hero-video",
+      "custom_css": "#hero-video {\r\n  position: relative;\r\n}\r\n\r\n#hero-video::after {\r\n  content: '';\r\n  position: absolute;\r\n  inset: 0;\r\n  background: rgba(8, 10, 12, 0.2); /* color + opacity */\r\n  pointer-events: none; /* lets clicks through to the play button */\r\n  z-index: 1;\r\n}"
+     },
+     "elements": [],
+     "widgetType": "video"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "71a2f5d",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "background_background": "classic",
+    "background_color": "#0C0F12",
+    "padding": {
+     "unit": "px",
+     "top": "100",
+     "right": "0",
+     "bottom": "50",
+     "left": "0",
+     "isLinked": false
+    },
+    "__globals__": {
+     "background_color": ""
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "100",
+     "right": "20",
+     "bottom": "50",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "9818be6",
+     "elType": "widget",
+     "settings": {
+      "editor": "<p>The Executive Problem</p>",
+      "align": "center",
+      "_css_classes": "halo-eyebrow"
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "fa3a5e1",
+     "elType": "widget",
+     "settings": {
+      "title": "Reactive Operations VS Proactive Execution",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Syne",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 44,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "__globals__": {
+       "title_color": "globals/colors?id=text"
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": 27,
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "e3f18e6",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "row",
+    "background_background": "classic",
+    "background_color": "#0C0F12",
+    "border_border": "solid",
+    "border_width": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "1",
+     "left": "0",
+     "isLinked": false
+    },
+    "border_color": "#FFFFFF12",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "20",
+     "bottom": "20",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "e9553d5",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "0",
+       "right": "1",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "border_color": "#FFFFFF12",
+      "border_width_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "b5af119",
+       "elType": "widget",
+       "settings": {
+        "title": "10-30",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_weight": "800",
+        "title_color": "#00D2B4",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "d2176d0",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Dealer groups operate across 10\u201330 siloed third-party platforms \u2014 with no unified view of the business.</p>",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "c7f2abc",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "0",
+       "right": "1",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "border_color": "#FFFFFF12",
+      "border_width_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "697589f",
+       "elType": "widget",
+       "settings": {
+        "title": "6",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_weight": "800",
+        "title_color": "#00D2B4",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "a4a3d20",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p data-pm-slice=\"1 1 []\"><code>Profit center engines in a single unified command center</code></p>",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "52b120d",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Inventory | Service | Marketing | Sales | Retention | Enterprise</p>",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "1c43453",
+     "elType": "container",
+     "settings": {
+      "content_width": "full"
+     },
+     "elements": [
+      {
+       "id": "469c588",
+       "elType": "widget",
+       "settings": {
+        "title": "Daily",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 52,
+         "sizes": []
+        },
+        "typography_font_weight": "800",
+        "title_color": "#00D2B4",
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "2d38cad",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Real-time AI monitoring \u2014 not monthly reports with outdated data.</p>",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "7cc0f9a",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "row",
+    "background_background": "classic",
+    "background_color": "#0C0F12",
+    "border_border": "none",
+    "border_width": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "1",
+     "left": "0",
+     "isLinked": false
+    },
+    "border_color": "#FFFFFF12",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "a0048ef",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "border_border": "none",
+      "border_width": {
+       "unit": "px",
+       "top": "0",
+       "right": "1",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "border_color": "#FFFFFF12",
+      "padding": {
+       "unit": "px",
+       "top": "80",
+       "right": "56",
+       "bottom": "80",
+       "left": "56",
+       "isLinked": false
+      },
+      "flex_align_items": "center",
+      "padding_mobile": {
+       "unit": "px",
+       "top": "80",
+       "right": "20",
+       "bottom": "80",
+       "left": "20",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "8fd820a",
+       "elType": "widget",
+       "settings": {
+        "editor": "DEALERS TODAY OPERATE ACROSS",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "b2498a7",
+       "elType": "widget",
+       "settings": {
+        "icon_list": [
+         {
+          "text": "10\u201330 platforms",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "9ccaead"
+         },
+         {
+          "text": "Disconnected dashboards",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "0be6bf2"
+         },
+         {
+          "text": "Time-sensitive manual reporting",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "837f0cd"
+         },
+         {
+          "text": "Departmental silos",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "c734f3d"
+         },
+         {
+          "text": "Increased payroll from staffing layers",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "66f018c"
+         },
+         {
+          "text": "Margin compression in an evolving business",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "b445c2b"
+         }
+        ],
+        "space_between": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "icon_typography_typography": "custom",
+        "icon_typography_font_family": "DM Sans",
+        "icon_typography_font_weight": "300",
+        "__globals__": {
+         "icon_color": "globals/colors?id=accent",
+         "text_color": "globals/colors?id=primary"
+        },
+        "icon_size": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-list"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "6d2cd26",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "border_border": "none",
+      "border_width": {
+       "unit": "px",
+       "top": "0",
+       "right": "1",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "border_color": "#FFFFFF12",
+      "padding": {
+       "unit": "px",
+       "top": "80",
+       "right": "56",
+       "bottom": "80",
+       "left": "56",
+       "isLinked": false
+      },
+      "flex_align_items": "center",
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "80",
+       "left": "20",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "719a7e6",
+       "elType": "widget",
+       "settings": {
+        "editor": "THE COST OF REACTIVE OPERATIONS",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "c857e48",
+       "elType": "widget",
+       "settings": {
+        "icon_list": [
+         {
+          "text": "Capital trapped in aging inventory",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "9ccaead"
+         },
+         {
+          "text": "Marketing waste from attribution gaps",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "0be6bf2"
+         },
+         {
+          "text": "Service inefficiency",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "837f0cd"
+         },
+         {
+          "text": "Sales drop-offs discovered too late",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "c734f3d"
+         },
+         {
+          "text": "Leadership reacting instead of directing",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "c3a648a"
+         }
+        ],
+        "space_between": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "icon_typography_typography": "custom",
+        "icon_typography_font_family": "DM Sans",
+        "icon_typography_font_weight": "300",
+        "__globals__": {
+         "icon_color": "globals/colors?id=accent",
+         "text_color": "globals/colors?id=primary"
+        },
+        "icon_size": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-list"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "6d6f813",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "flex_justify_content": "center",
+    "flex_align_items": "center",
+    "background_background": "classic",
+    "background_color": "#0C0F12",
+    "border_border": "none",
+    "border_width": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "1",
+     "left": "0",
+     "isLinked": false
+    },
+    "border_color": "#FFFFFF12",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "100",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "63f3346",
+     "elType": "widget",
+     "settings": {
+      "editor": "Fragmentation quietly drains EBITDA.",
+      "typography_typography": "custom",
+      "typography_font_family": "Syne",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 20,
+       "sizes": []
+      },
+      "typography_font_weight": "600",
+      "__globals__": {
+       "text_color": "globals/colors?id=text"
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "bd0ed03",
+     "elType": "widget",
+     "settings": {
+      "editor": "When reflexes are slow, volatility feels like chaos.",
+      "typography_typography": "custom",
+      "typography_font_family": "DM Sans",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 17,
+       "sizes": []
+      },
+      "typography_font_weight": "300",
+      "_margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "-20",
+       "left": "0",
+       "isLinked": false
+      },
+      "_padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "__globals__": {
+       "text_color": "globals/colors?id=primary"
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "8214e42",
+     "elType": "widget",
+     "settings": {
+      "editor": "When clarity is unified, volatility becomes an advantage.",
+      "typography_typography": "custom",
+      "typography_font_family": "DM Sans",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 17,
+       "sizes": []
+      },
+      "typography_font_weight": "300",
+      "__globals__": {
+       "text_color": "globals/colors?id=accent"
+      }
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "1db0c5b",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "background_background": "classic",
+    "padding": {
+     "unit": "px",
+     "top": "100",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    },
+    "__globals__": {
+     "background_color": "globals/colors?id=ba83fae"
+    }
+   },
+   "elements": [
+    {
+     "id": "1e3be0d",
+     "elType": "widget",
+     "settings": {
+      "editor": "PLATFORM",
+      "align": "center",
+      "_css_classes": "halo-eyebrow"
+     },
+     "elements": [],
+     "widgetType": "text-editor"
+    },
+    {
+     "id": "aff0469",
+     "elType": "widget",
+     "settings": {
+      "title": "AI Intelligence Across Every Profit Center",
+      "align": "center",
+      "typography_typography": "custom",
+      "typography_font_family": "Syne",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 44,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "__globals__": {
+       "title_color": "globals/colors?id=text"
+      }
+     },
+     "elements": [],
+     "widgetType": "heading"
+    },
+    {
+     "id": "45582ed",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "width": {
+       "unit": "px",
+       "size": 580,
+       "sizes": []
+      },
+      "flex_align_items": "center",
+      "_flex_align_self": "center"
+     },
+     "elements": [
+      {
+       "id": "2caa6ea",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Halo is built for the modern dealership \u2014 not the vendor ecosystem built around it. Unified AI intelligence across every revenue driver.</p>",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "88efca0",
+   "elType": "container",
+   "settings": {
+    "container_type": "grid",
+    "grid_columns_grid": {
+     "unit": "fr",
+     "size": 3
+    },
+    "grid_rows_grid": {
+     "unit": "fr",
+     "size": 2
+    },
+    "grid_rows_grid_mobile": {
+     "unit": "fr",
+     "size": "2"
+    },
+    "background_background": "classic",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "100",
+     "left": "0",
+     "isLinked": false
+    },
+    "__globals__": {
+     "background_color": "globals/colors?id=ba83fae"
+    }
+   },
+   "elements": [
+    {
+     "id": "97846bb",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "padding": {
+       "unit": "px",
+       "top": "028",
+       "right": "22",
+       "bottom": "28",
+       "left": "22",
+       "isLinked": false
+      },
+      "css_classes": "halo-card"
+     },
+     "elements": [
+      {
+       "id": "79bc41b",
+       "elType": "widget",
+       "settings": {
+        "html": "<div class=\"halo-dot\"></div>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      },
+      {
+       "id": "b231878",
+       "elType": "widget",
+       "settings": {
+        "title": "Inventory",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "4c7534c",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Protect/Turn Capital</p>",
+        "align": "center",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "ca25333",
+       "elType": "widget",
+       "settings": {
+        "icon_list": [
+         {
+          "text": "Market-level pricing + turn intelligence",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "0a715dd"
+         },
+         {
+          "text": "Aged and non-geo unit alerts",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "44a7413"
+         },
+         {
+          "text": "Faster allocation + trade decisions",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "874dfdd"
+         },
+         {
+          "text": "Identify and source inventory gaps",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "13d29ef"
+         }
+        ],
+        "icon_size": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "icon_typography_typography": "custom",
+        "icon_typography_font_family": "DM Sans",
+        "icon_typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary",
+         "icon_color": "globals/colors?id=accent"
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-list"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "a2142c6",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "padding": {
+       "unit": "px",
+       "top": "28",
+       "right": "22",
+       "bottom": "28",
+       "left": "22",
+       "isLinked": false
+      },
+      "css_classes": "halo-card"
+     },
+     "elements": [
+      {
+       "id": "889502e",
+       "elType": "widget",
+       "settings": {
+        "html": "<div class=\"halo-dot\"></div>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      },
+      {
+       "id": "229a416",
+       "elType": "widget",
+       "settings": {
+        "title": "Service",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "a54987e",
+       "elType": "widget",
+       "settings": {
+        "editor": "Optimize Fixed Ops\n",
+        "align": "center",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "2871f32",
+       "elType": "widget",
+       "settings": {
+        "icon_list": [
+         {
+          "text": "Technician productivity and accountability",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "0a715dd"
+         },
+         {
+          "text": "Parts visibility \u2192 reduced downtime",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "7a0a08b"
+         },
+         {
+          "text": "Service absorption KPIs surfaced to leadership",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "890ae94"
+         }
+        ],
+        "icon_size": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "icon_typography_typography": "custom",
+        "icon_typography_font_family": "DM Sans",
+        "icon_typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary",
+         "icon_color": "globals/colors?id=accent"
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-list"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "1801617",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "padding": {
+       "unit": "px",
+       "top": "28",
+       "right": "22",
+       "bottom": "28",
+       "left": "22",
+       "isLinked": false
+      },
+      "css_classes": "halo-card"
+     },
+     "elements": [
+      {
+       "id": "bc922d0",
+       "elType": "widget",
+       "settings": {
+        "html": "<div class=\"halo-dot\"></div>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      },
+      {
+       "id": "430069c",
+       "elType": "widget",
+       "settings": {
+        "title": "Marketing",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "58b94a2",
+       "elType": "widget",
+       "settings": {
+        "editor": "Eliminate Waste/Maximize Performance\n",
+        "align": "center",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "d50c1a8",
+       "elType": "widget",
+       "settings": {
+        "icon_list": [
+         {
+          "text": "Marketing and vendor performance visibility",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "0a715dd"
+         },
+         {
+          "text": "Vendor scorecards to maximize ROI",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "44a7413"
+         },
+         {
+          "text": "Cross-channel integration (Meta, Google, OTT, 3rd party)",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "874dfdd"
+         },
+         {
+          "text": "AI-driven attribution",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "13d29ef"
+         }
+        ],
+        "icon_size": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "icon_typography_typography": "custom",
+        "icon_typography_font_family": "DM Sans",
+        "icon_typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary",
+         "icon_color": "globals/colors?id=accent"
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-list"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "8113623",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "padding": {
+       "unit": "px",
+       "top": "28",
+       "right": "22",
+       "bottom": "28",
+       "left": "22",
+       "isLinked": false
+      },
+      "css_classes": "halo-card"
+     },
+     "elements": [
+      {
+       "id": "00b756c",
+       "elType": "widget",
+       "settings": {
+        "html": "<div class=\"halo-dot\"></div>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      },
+      {
+       "id": "4460a27",
+       "elType": "widget",
+       "settings": {
+        "title": "Sales",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "135b7f6",
+       "elType": "widget",
+       "settings": {
+        "editor": "Drive Revenue\n",
+        "align": "center",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "60126b2",
+       "elType": "widget",
+       "settings": {
+        "icon_list": [
+         {
+          "text": "Sales productivity and accountability",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "0a715dd"
+         },
+         {
+          "text": "Full funnel visibility",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "44a7413"
+         },
+         {
+          "text": "CRM unification",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "874dfdd"
+         },
+         {
+          "text": "Continuous drop-off and bottleneck alerts",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "13d29ef"
+         }
+        ],
+        "icon_size": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "icon_typography_typography": "custom",
+        "icon_typography_font_family": "DM Sans",
+        "icon_typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary",
+         "icon_color": "globals/colors?id=accent"
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-list"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "6064971",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "padding": {
+       "unit": "px",
+       "top": "28",
+       "right": "22",
+       "bottom": "28",
+       "left": "22",
+       "isLinked": false
+      },
+      "css_classes": "halo-card"
+     },
+     "elements": [
+      {
+       "id": "35459e8",
+       "elType": "widget",
+       "settings": {
+        "html": "<div class=\"halo-dot\"></div>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      },
+      {
+       "id": "a145ae4",
+       "elType": "widget",
+       "settings": {
+        "title": "Retention",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "b9e3eb9",
+       "elType": "widget",
+       "settings": {
+        "editor": "Drive Lifetime Value",
+        "align": "center",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "52cc93b",
+       "elType": "widget",
+       "settings": {
+        "icon_list": [
+         {
+          "text": "Equity mining and re-engagement triggers",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "0a715dd"
+         },
+         {
+          "text": "Service-to-sales conversion visibility",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "0c830ca"
+         },
+         {
+          "text": "Lifecycle tracking across rooftops",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "7441622"
+         },
+         {
+          "text": "AI alerts on churn risk and missed opportunities",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "e1ae897"
+         }
+        ],
+        "icon_size": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "icon_typography_typography": "custom",
+        "icon_typography_font_family": "DM Sans",
+        "icon_typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary",
+         "icon_color": "globals/colors?id=accent"
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-list"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "2f76e87",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "padding": {
+       "unit": "px",
+       "top": "28",
+       "right": "22",
+       "bottom": "28",
+       "left": "22",
+       "isLinked": false
+      },
+      "css_classes": "halo-card"
+     },
+     "elements": [
+      {
+       "id": "8199151",
+       "elType": "widget",
+       "settings": {
+        "html": "<div class=\"halo-dot\"></div>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      },
+      {
+       "id": "0471c49",
+       "elType": "widget",
+       "settings": {
+        "title": "Executive View",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_weight": "700",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "659c4c4",
+       "elType": "widget",
+       "settings": {
+        "editor": "Enterprise Dashboard\n",
+        "align": "center",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "e552f51",
+       "elType": "widget",
+       "settings": {
+        "icon_list": [
+         {
+          "text": "Enterprise level  visibility ",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "0a715dd"
+         },
+         {
+          "text": "Prescriptive insights that drive execution",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "44a7413"
+         },
+         {
+          "text": "Prescriptive insights that eliminate decision paralysis and drive execution",
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "_id": "874dfdd"
+         }
+        ],
+        "icon_size": {
+         "unit": "px",
+         "size": 10,
+         "sizes": []
+        },
+        "icon_typography_typography": "custom",
+        "icon_typography_font_family": "DM Sans",
+        "icon_typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary",
+         "icon_color": "globals/colors?id=accent"
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-list"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "30bdd4c",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "background_background": "classic",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "100",
+     "left": "0",
+     "isLinked": false
+    },
+    "__globals__": {
+     "background_color": "globals/colors?id=ba83fae"
+    }
+   },
+   "elements": [
+    {
+     "id": "4a3aea6",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row"
+     },
+     "elements": [
+      {
+       "id": "d390dcf",
+       "elType": "container",
+       "settings": {
+        "content_width": "full"
+       },
+       "elements": [
+        {
+         "id": "6ee89fd",
+         "elType": "widget",
+         "settings": {
+          "editor": "THE HALO EFFECT",
+          "align": "start",
+          "_css_classes": "halo-eyebrow"
+         },
+         "elements": [],
+         "widgetType": "text-editor"
+        },
+        {
+         "id": "311ede5",
+         "elType": "widget",
+         "settings": {
+          "title": "AI agents. Real-time monitoring. Zero manual reports.",
+          "align": "start",
+          "__globals__": {
+           "title_color": "globals/colors?id=text"
+          },
+          "typography_typography": "custom",
+          "typography_font_family": "Syne",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 44,
+           "sizes": []
+          },
+          "typography_font_weight": "700"
+         },
+         "elements": [],
+         "widgetType": "heading"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "c5f45ce",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_justify_content": "center"
+       },
+       "elements": [
+        {
+         "id": "579e9ea",
+         "elType": "widget",
+         "settings": {
+          "editor": "Agents run continuously and surface prioritized actions \u2014 no more digging through dashboards.",
+          "align": "end",
+          "typography_typography": "custom",
+          "typography_font_family": "DM Sans",
+          "typography_font_weight": "300",
+          "__globals__": {
+           "text_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": [],
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "882b3d1",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "width": {
+       "unit": "px",
+       "size": "",
+       "sizes": []
+      },
+      "flex_align_items": "center",
+      "_flex_align_self": "center",
+      "css_classes": "halo-card"
+     },
+     "elements": [
+      {
+       "id": "d03aa72",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "presetTitle": "Grid",
+        "presetIcon": "eicon-container-grid",
+        "content_width": "full",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 5,
+         "sizes": []
+        },
+        "grid_rows_grid": {
+         "unit": "fr",
+         "size": 3,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "4a62a96",
+   "elType": "container",
+   "settings": {
+    "container_type": "grid",
+    "grid_columns_grid": {
+     "unit": "fr",
+     "size": 3
+    },
+    "grid_rows_grid": {
+     "unit": "fr",
+     "size": 2
+    },
+    "grid_rows_grid_mobile": {
+     "unit": "fr",
+     "size": "2"
+    },
+    "background_background": "classic",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "100",
+     "left": "0",
+     "isLinked": false
+    },
+    "custom_css": "selector .watch-signals {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 8px;\n  margin-top: 20px;\n}",
+    "__globals__": {
+     "background_color": "globals/colors?id=ba83fae"
+    }
+   },
+   "elements": [
+    {
+     "id": "2dd555e",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_justify_content": "flex-start",
+      "flex_align_items": "flex-start",
+      "padding": {
+       "unit": "px",
+       "top": "48",
+       "right": "22",
+       "bottom": "48",
+       "left": "22",
+       "isLinked": false
+      },
+      "css_classes": "halo-card-line"
+     },
+     "elements": [
+      {
+       "id": "7cbc978",
+       "elType": "widget",
+       "settings": {
+        "editor": "Inventory",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "14fafac",
+       "elType": "widget",
+       "settings": {
+        "title": "Protect your capital before it ages",
+        "header_size": "span",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_font_weight": "600",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "9471e84",
+       "elType": "widget",
+       "settings": {
+        "editor": "Halo monitors every unit daily \u2014 pricing position vs. market, days on lot, velocity trend, and geographic fit. Units that are mispriced, stalled, or misallocated surface automatically.",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "eb9e2e5",
+       "elType": "widget",
+       "settings": {
+        "html": "<span class=\"halo-tag\" >PTM% drift</span>\n<span class=\"halo-tag\">Aging alerts</span>\n<span class=\"halo-tag\">Non-geo units</span>\n<span class=\"halo-tag\"style=\"margin-top:5px;\">MDS vs velocity</span>\n<span class=\"halo-tag\"style=\"margin-top:5px;\">KBB acquisition performance</span>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "e73a70b",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_justify_content": "flex-start",
+      "flex_align_items": "flex-start",
+      "padding": {
+       "unit": "px",
+       "top": "48",
+       "right": "22",
+       "bottom": "48",
+       "left": "22",
+       "isLinked": false
+      },
+      "css_classes": "halo-card-line"
+     },
+     "elements": [
+      {
+       "id": "c33a0dd",
+       "elType": "widget",
+       "settings": {
+        "editor": "Service",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "8186aac",
+       "elType": "widget",
+       "settings": {
+        "title": "Find fixed ops revenue hiding in your ROs",
+        "header_size": "span",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_font_weight": "600",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "6c396c9",
+       "elType": "widget",
+       "settings": {
+        "editor": "Halo flags 1-line repair orders, tracks customer-pay capture rates, monitors recall completion, and surfaces technician productivity signals that manual reporting cannot capture.",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "7da06b1",
+       "elType": "widget",
+       "settings": {
+        "html": "<span class=\"halo-tag\" >1-line RO rate</span>\n<span class=\"halo-tag\">CP capture</span>\n<span class=\"halo-tag\">Recall alerts</span>\n<span class=\"halo-tag\"style=\"margin-top:5px;\">Throughput signals</span>\n<span class=\"halo-tag\"style=\"margin-top:5px;\">Absorption tracking</span>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "e9efd09",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_justify_content": "flex-start",
+      "flex_align_items": "flex-start",
+      "padding": {
+       "unit": "px",
+       "top": "48",
+       "right": "22",
+       "bottom": "48",
+       "left": "22",
+       "isLinked": false
+      },
+      "css_classes": "halo-card-line"
+     },
+     "elements": [
+      {
+       "id": "6ea03e0",
+       "elType": "widget",
+       "settings": {
+        "editor": "Marketing",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "0f1e3f0",
+       "elType": "widget",
+       "settings": {
+        "title": "Stop paying for marketing investment you can\u2019t justify.",
+        "header_size": "span",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_font_weight": "600",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "ffdb913",
+       "elType": "widget",
+       "settings": {
+        "editor": "Real-time scans across every connected ad platform flag CPL spikes, going-dark risk, budget pacing gaps, and vendor performance. Say goodbye to end of the month crisis moments.",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "fb35363",
+       "elType": "widget",
+       "settings": {
+        "html": "<span class=\"halo-tag\" >CPL spikes</span>\n<span class=\"halo-tag\">Spend pacing</span>\n<span class=\"halo-tag\">Vendor scorecards</span>\n<span class=\"halo-tag\"style=\"margin-top:5px;\">Attribution gaps</span>\n<span class=\"halo-tag\"style=\"margin-top:5px;\">Delivery issues</span>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "3349d05",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_justify_content": "flex-start",
+      "flex_align_items": "flex-start",
+      "padding": {
+       "unit": "px",
+       "top": "48",
+       "right": "22",
+       "bottom": "48",
+       "left": "22",
+       "isLinked": false
+      },
+      "css_classes": "halo-card-line"
+     },
+     "elements": [
+      {
+       "id": "846cd18",
+       "elType": "widget",
+       "settings": {
+        "editor": "Sales",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "2269505",
+       "elType": "widget",
+       "settings": {
+        "title": "Protect revenue before it slips",
+        "header_size": "span",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_font_weight": "600",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "b46ba3c",
+       "elType": "widget",
+       "settings": {
+        "editor": "Halo surfaces breakdowns across your new and used sales funnel \u2014 from lead response gaps to pricing misalignment and stalled deals. Missed opportunities, slow follow-up, and conversion leaks are flagged early so teams can act before revenue slips.",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "1a2a450",
+       "elType": "widget",
+       "settings": {
+        "html": "<span class=\"halo-tag\" >Lead response gaps</span>\n<span class=\"halo-tag\">Funnel drop-offs</span>\n<span class=\"halo-tag\">Pricing vs market</span>\n<span class=\"halo-tag\"style=\"margin-top:5px;\">Aged opportunities</span>\n<span class=\"halo-tag\"style=\"margin-top:5px;\">Close rate trends</span>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "eee59fe",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_justify_content": "flex-start",
+      "flex_align_items": "flex-start",
+      "padding": {
+       "unit": "px",
+       "top": "48",
+       "right": "22",
+       "bottom": "48",
+       "left": "22",
+       "isLinked": false
+      },
+      "css_classes": "halo-card-line"
+     },
+     "elements": [
+      {
+       "id": "8ae1d47",
+       "elType": "widget",
+       "settings": {
+        "editor": "Retention",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "69ed5da",
+       "elType": "widget",
+       "settings": {
+        "title": "Catch defection before the customer decides",
+        "header_size": "span",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_font_weight": "600",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "3283a54",
+       "elType": "widget",
+       "settings": {
+        "editor": "From sold date forward, Halo tracks every customer's service engagement, flags those going dark, scores loyalty across rooftops, and surfaces trade-back opportunities at the right moment.",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "dd0a900",
+       "elType": "widget",
+       "settings": {
+        "html": "<span class=\"halo-tag\" >Post-sale gaps</span>\n<span class=\"halo-tag\">Retention score</span>\n<span class=\"halo-tag\">Trade-back timing</span>\n<span class=\"halo-tag\"style=\"margin-top:5px;\">Lifecycle alerts</span>\n<span class=\"halo-tag\"style=\"margin-top:5px;\">Defection risk</span>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "7b30322",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_justify_content": "flex-start",
+      "flex_align_items": "flex-start",
+      "padding": {
+       "unit": "px",
+       "top": "48",
+       "right": "22",
+       "bottom": "48",
+       "left": "22",
+       "isLinked": false
+      },
+      "css_classes": "halo-card-line"
+     },
+     "elements": [
+      {
+       "id": "32e245f",
+       "elType": "widget",
+       "settings": {
+        "editor": "Executive View",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "f934d08",
+       "elType": "widget",
+       "settings": {
+        "title": "Enterprise Control\n",
+        "header_size": "span",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "typography_font_weight": "600",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "d24657d",
+       "elType": "widget",
+       "settings": {
+        "editor": "Halo delivers a unified view across rooftops, departments, and profit centers \u2014 surfacing what\u2019s changing, where performance is slipping, and where to focus. No lagging reports. Just clear, actionable visibility across the business.",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "b6888b9",
+       "elType": "widget",
+       "settings": {
+        "html": "<span class=\"halo-tag\" >Rooftop gaps</span>\n<span class=\"halo-tag\">Profit center alignment</span>\n<span class=\"halo-tag\">KPI shifts</span>\n<span class=\"halo-tag\"style=\"margin-top:5px;\">Capital exposure</span>\n<span class=\"halo-tag\"style=\"margin-top:5px;\">Execution signals</span>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "42b983b",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "row",
+    "background_background": "classic",
+    "__globals__": {
+     "background_color": ""
+    },
+    "background_color": "#080A0C"
+   },
+   "elements": [
+    {
+     "id": "b2a0700",
+     "elType": "container",
+     "settings": {
+      "content_width": "full"
+     },
+     "elements": [
+      {
+       "id": "4047e1d",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>How It Works</p>",
+        "align": "start",
+        "_css_classes": "halo-eyebrow",
+        "__globals__": {
+         "text_color": ""
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "6f7628a",
+       "elType": "widget",
+       "settings": {
+        "title": "From raw data to action in hours - not weeks.",
+        "align": "start",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 44,
+         "sizes": []
+        },
+        "typography_font_weight": "700"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "893051c",
+       "elType": "widget",
+       "settings": {
+        "editor": "Halo normalizes data from your DMS, CRM, inventory platform, and marketing channels \u2014 then runs AI signal scans nightly so your team can start each day knowing exactly where to focus.\n",
+        "align": "start",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "691dafa",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "_element_id": "steps-section",
+        "custom_css": "/* 1. Reset counter on the parent section */\r\n#steps-section {\r\n  counter-reset: box-counter;\r\n}\r\n\r\n/* 2. Each icon box increments */\r\n#steps-section .elementor-icon-box-wrapper {\r\n  counter-increment: box-counter;\r\n}\r\n\r\n/* 3. Hide the actual icon */\r\n#steps-section .elementor-icon-box-icon i,\r\n#steps-section .elementor-icon-box-icon svg {\r\n  display: none;\r\n}\r\n\r\n/* 4. Inject the number in its place */\r\n#steps-section .elementor-icon-box-icon::before {\r\ncontent: counter(box-counter, decimal-leading-zero);\r\nfont-family: 'Syne', sans-serif;\r\n\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  width: 60px;\r\n    height: 20px;\r\n\r\n  color: #00D2B4;\r\n  font-size: 22px;\r\n  font-weight: 700;\r\n  margin: 0 auto;\r\n}"
+       },
+       "elements": [
+        {
+         "id": "2438081",
+         "elType": "widget",
+         "settings": {
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "title_text": "Connect Your Sources",
+          "description_text": "DealerVault DMS files, vAuto inventory, VinSolutions CRM, Google, Meta, and Bing \u2014 all ingested on a nightly basis into a normalized, dealer-mapped data layer.",
+          "position": "inline-start",
+          "icon_size": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=text",
+           "description_color": "globals/colors?id=primary",
+           "primary_color": "globals/colors?id=accent"
+          }
+         },
+         "elements": [],
+         "widgetType": "icon-box"
+        },
+        {
+         "id": "0577975",
+         "elType": "widget",
+         "settings": {
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "title_text": "AI Scans Run in real-time",
+          "description_text": "Agents check pace-to-goal, inventory health, service capture, marketing performance, and retention signals across every rooftop simultaneously.\n",
+          "position": "inline-start",
+          "icon_size": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=text",
+           "description_color": "globals/colors?id=primary",
+           "primary_color": "globals/colors?id=accent"
+          }
+         },
+         "elements": [],
+         "widgetType": "icon-box"
+        },
+        {
+         "id": "a02e799",
+         "elType": "widget",
+         "settings": {
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "title_text": "Prioritized Alerts Surface \u2014 Not Reports",
+          "description_text": "Role-based alert panels for GMs, GSMs, BDC managers, and fixed ops. What changed, why it changed, and what to do about it \u2014 without digging through dashboards.",
+          "position": "inline-start",
+          "icon_size": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=text",
+           "description_color": "globals/colors?id=primary",
+           "primary_color": "globals/colors?id=accent"
+          }
+         },
+         "elements": [],
+         "widgetType": "icon-box"
+        },
+        {
+         "id": "a72c18f",
+         "elType": "widget",
+         "settings": {
+          "selected_icon": {
+           "value": "far fa-square",
+           "library": "fa-regular"
+          },
+          "title_text": "Track Outcomes",
+          "description_text": "Every alert has a measurable outcome. Halo tracks whether action was taken, quantifies the impact, and builds historical context that makes future signals sharper.",
+          "position": "inline-start",
+          "icon_size": {
+           "unit": "px",
+           "size": 10,
+           "sizes": []
+          },
+          "title_typography_typography": "custom",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": 18,
+           "sizes": []
+          },
+          "__globals__": {
+           "title_color": "globals/colors?id=text",
+           "description_color": "globals/colors?id=primary",
+           "primary_color": "globals/colors?id=accent"
+          }
+         },
+         "elements": [],
+         "widgetType": "icon-box"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "68f2aae",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_justify_content": "center"
+     },
+     "elements": [
+      {
+       "id": "191dc9d",
+       "elType": "widget",
+       "settings": {
+        "html": "<div class=\"halo-card\" style=\"padding:32px;\">\n  <div style=\"display:flex;justify-content:space-between;align-items:center;\n              padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,0.07);\n              margin-bottom:16px;\">\n    <span style=\"font-family:'Syne',sans-serif;font-size:13px;\n                 font-weight:600;color:#f4f6f8;letter-spacing:.04em;\">\n      Active Alerts \u2014 Group View\n    </span>\n    <span class=\"halo-badge\" style=\"border-radius:4px;padding:3px 10px;font-size:10px;\">\n      Live\n    </span>\n  </div>\n  <!-- Alert row template \u2014 repeat for each alert -->\n  <div style=\"display:flex;gap:12px;padding:12px 0;\n              border-bottom:1px solid rgba(255,255,255,0.05);\">\n    <div style=\"width:7px;height:7px;border-radius:50%;background:#ff4d4d;\n                box-shadow:0 0 6px rgba(255,77,77,.5);margin-top:5px;flex-shrink:0;\">\n    </div>\n    <div>\n      <strong style=\"font-size:13px;font-weight:500;color:#f4f6f8;display:block;\n                     margin-bottom:2px;\">\n        3 rooftops behind pace &gt;15%\n      </strong>\n      <span style=\"font-size:12px;color:rgba(244,246,248,0.45);\">\n        Green Leaf Kia, Green Leaf Buick, Green Leaf Chevy \u00b7 18 days remaining\n      </span>\n    </div>\n  </div>\n  <!-- Repeat for remaining 4 alerts with appropriate dot colors:\n       red (#ff4d4d) for first two, yellow (#ffd166) for middle two,\n       teal (#00d2b4) for last one -->\n</div>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2e732ee",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "row",
+    "background_background": "classic",
+    "padding": {
+     "unit": "px",
+     "top": "100",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    },
+    "__globals__": {
+     "background_color": "globals/colors?id=ba83fae"
+    }
+   },
+   "elements": [
+    {
+     "id": "2d046e1",
+     "elType": "container",
+     "settings": {
+      "content_width": "full"
+     },
+     "elements": [
+      {
+       "id": "71ffb11",
+       "elType": "widget",
+       "settings": {
+        "editor": "Security & Governance",
+        "align": "start",
+        "_css_classes": "halo-eyebrow",
+        "_element_width": "initial",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": 100
+        },
+        "_flex_size": "none"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "23f5284",
+       "elType": "widget",
+       "settings": {
+        "title": "Your data doesn't leave your control.",
+        "align": "start",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 44,
+         "sizes": []
+        },
+        "typography_font_weight": "700"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "39e9f41",
+       "elType": "widget",
+       "settings": {
+        "editor": "Governance built in from the ground up\u2014not layered on later. Your data remains secure, controlled, and your true competitive advantage.\n",
+        "align": "start",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "78bdb66",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column"
+       },
+       "elements": [
+        {
+         "id": "c9f84e5",
+         "elType": "container",
+         "settings": {
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "6f20541",
+           "elType": "widget",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-unlock-alt",
+             "library": "fa-solid"
+            },
+            "title_text": "Dealer-controlled data environment",
+            "description_text": "Your DMS, CRM, and inventory data is ingested into an isolated, dealer-owned data layer. No shared pipelines, no pooled data models.\n",
+            "text_align": "start",
+            "title_typography_typography": "custom",
+            "title_typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "__globals__": {
+             "title_color": "globals/colors?id=text",
+             "description_color": "globals/colors?id=primary",
+             "primary_color": "globals/colors?id=accent"
+            },
+            "view": "framed",
+            "shape": "square",
+            "position": "inline-start",
+            "icon_size": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "icon-box"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "74b246a",
+         "elType": "container",
+         "settings": {
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "ecd0529",
+           "elType": "widget",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-shield-alt",
+             "library": "fa-solid"
+            },
+            "title_text": "No external LLM exposure",
+            "description_text": "AI processing runs within your controlled environment. Your deal data, customer records, and operational details never touch external model training pipelines.",
+            "text_align": "start",
+            "title_typography_typography": "custom",
+            "title_typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "description_typography_typography": "custom",
+            "__globals__": {
+             "title_color": "globals/colors?id=text",
+             "description_color": "globals/colors?id=primary",
+             "primary_color": "globals/colors?id=accent"
+            },
+            "view": "framed",
+            "shape": "square",
+            "position": "inline-start",
+            "icon_size": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "icon-box"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "5bd37b3",
+         "elType": "container",
+         "settings": {
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "cafb202",
+           "elType": "widget",
+           "settings": {
+            "selected_icon": {
+             "value": "fas fa-cog",
+             "library": "fa-solid"
+            },
+            "title_text": "Centralized admin control",
+            "description_text": "One admin panel for all rooftops. Configure thresholds, map dealer IDs, manage user roles, and set group vs. rooftop visibility \u2014 with full audit trail.",
+            "text_align": "start",
+            "title_typography_typography": "custom",
+            "title_typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "__globals__": {
+             "title_color": "globals/colors?id=text",
+             "description_color": "globals/colors?id=primary",
+             "primary_color": "globals/colors?id=accent"
+            },
+            "view": "framed",
+            "shape": "square",
+            "position": "inline-start",
+            "icon_size": {
+             "unit": "px",
+             "size": 10,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "icon-box"
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    },
+    {
+     "id": "3c69591",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_justify_content": "center"
+     },
+     "elements": [
+      {
+       "id": "fa6aa6e",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "presetTitle": "Grid",
+        "presetIcon": "eicon-container-grid",
+        "content_width": "full",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "4a67607",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_justify_content": "flex-start",
+          "padding": {
+           "unit": "px",
+           "top": "20",
+           "right": "15",
+           "bottom": "20",
+           "left": "15",
+           "isLinked": false
+          },
+          "css_classes": "halo-card"
+         },
+         "elements": [
+          {
+           "id": "704ac47",
+           "elType": "widget",
+           "settings": {
+            "title": "Dealer-Controlled\n",
+            "header_size": "span",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Syne",
+            "typography_font_weight": "bold",
+            "typography_text_transform": "uppercase",
+            "__globals__": {
+             "title_color": "globals/colors?id=accent"
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "00ac26f",
+           "elType": "widget",
+           "settings": {
+            "editor": "Your data environment, isolated by design\n",
+            "align": "center",
+            "__globals__": {
+             "text_color": "globals/colors?id=primary"
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "73b3b8c",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_justify_content": "flex-start",
+          "padding": {
+           "unit": "px",
+           "top": "20",
+           "right": "15",
+           "bottom": "20",
+           "left": "15",
+           "isLinked": false
+          },
+          "css_classes": "halo-card"
+         },
+         "elements": [
+          {
+           "id": "4c64ce9",
+           "elType": "widget",
+           "settings": {
+            "title": "Modular Deploy",
+            "header_size": "span",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Syne",
+            "typography_font_weight": "bold",
+            "typography_text_transform": "uppercase",
+            "__globals__": {
+             "title_color": "globals/colors?id=accent"
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "07ace85",
+           "elType": "widget",
+           "settings": {
+            "editor": "One rooftop or all 30 \u2014 deploy at your pace\n",
+            "align": "center",
+            "__globals__": {
+             "text_color": "globals/colors?id=primary"
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "ac004fa",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_justify_content": "flex-start",
+          "padding": {
+           "unit": "px",
+           "top": "20",
+           "right": "15",
+           "bottom": "20",
+           "left": "15",
+           "isLinked": false
+          },
+          "css_classes": "halo-card"
+         },
+         "elements": [
+          {
+           "id": "366317b",
+           "elType": "widget",
+           "settings": {
+            "title": "No LLM Leakage \n",
+            "header_size": "span",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Syne",
+            "typography_font_weight": "bold",
+            "typography_text_transform": "uppercase",
+            "__globals__": {
+             "title_color": "globals/colors?id=accent"
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "adb4ecc",
+           "elType": "widget",
+           "settings": {
+            "editor": "AI runs internally \u2014 deal data stays internal\n",
+            "align": "center",
+            "__globals__": {
+             "text_color": "globals/colors?id=primary"
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "a557022",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_justify_content": "flex-start",
+          "padding": {
+           "unit": "px",
+           "top": "20",
+           "right": "15",
+           "bottom": "20",
+           "left": "15",
+           "isLinked": false
+          },
+          "css_classes": "halo-card"
+         },
+         "elements": [
+          {
+           "id": "2feacd2",
+           "elType": "widget",
+           "settings": {
+            "title": "Group-Ready\n",
+            "header_size": "span",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Syne",
+            "typography_font_weight": "bold",
+            "typography_text_transform": "uppercase",
+            "__globals__": {
+             "title_color": "globals/colors?id=accent"
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "725773b",
+           "elType": "widget",
+           "settings": {
+            "editor": "Built for multi-rooftop groups from day one\n",
+            "align": "center",
+            "__globals__": {
+             "text_color": "globals/colors?id=primary"
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "fd37434",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "#00D2B4",
+        "css_classes": "halo-card",
+        "__globals__": {
+         "border_color": "globals/colors?id=accent",
+         "background_color": ""
+        }
+       },
+       "elements": [
+        {
+         "id": "613bb14",
+         "elType": "widget",
+         "settings": {
+          "editor": "Where legacy tools report, Halo orchestrates. Where vendors create dependency \u2014 Halo creates control.",
+          "align": "center",
+          "typography_typography": "custom",
+          "typography_font_family": "Syne",
+          "typography_font_weight": "300",
+          "typography_font_style": "italic",
+          "__globals__": {
+           "text_color": "globals/colors?id=primary"
+          }
+         },
+         "elements": [],
+         "widgetType": "text-editor"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "4065a4d",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "row",
+    "background_background": "classic",
+    "padding": {
+     "unit": "px",
+     "top": "100",
+     "right": "0",
+     "bottom": "100",
+     "left": "0",
+     "isLinked": false
+    },
+    "__globals__": {
+     "background_color": "globals/colors?id=ba83fae"
+    }
+   },
+   "elements": [
+    {
+     "id": "33e635b",
+     "elType": "container",
+     "settings": {
+      "content_width": "full"
+     },
+     "elements": [
+      {
+       "id": "0a21783",
+       "elType": "widget",
+       "settings": {
+        "editor": "Common Questions",
+        "align": "center",
+        "_css_classes": "halo-eyebrow"
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "63c888d",
+       "elType": "widget",
+       "settings": {
+        "title": "Answers for the real questions Dealers ask.",
+        "align": "center",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 44,
+         "sizes": []
+        },
+        "typography_font_weight": "700"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "f44c7bb",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "presetTitle": "Grid",
+        "presetIcon": "eicon-container-grid",
+        "content_width": "full",
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "467c600",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "css_classes": "halo-card",
+          "padding": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "098cfbd",
+           "elType": "widget",
+           "settings": {
+            "title": "Is Halo OS replacing my CRM, DMS, or inventory tools?\n",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_family": "Syne",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "__globals__": {
+             "title_color": "globals/colors?id=text"
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "e5f5a8c",
+           "elType": "widget",
+           "settings": {
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            },
+            "typography_font_weight": "300",
+            "__globals__": {
+             "text_color": "globals/colors?id=primary"
+            },
+            "editor": "No. Halo connects to and normalizes data from the tools you already use \u2014 VinSolutions, CDK, vAuto, and others. It surfaces intelligence from those systems, it doesn't replace them.\n"
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "3dd7a86",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "css_classes": "halo-card",
+          "padding": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "1d69191",
+           "elType": "widget",
+           "settings": {
+            "title": "Is this just another dashboard I have to check?",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_family": "Syne",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "__globals__": {
+             "title_color": "globals/colors?id=text"
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "8a55b22",
+           "elType": "widget",
+           "settings": {
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            },
+            "typography_font_weight": "300",
+            "__globals__": {
+             "text_color": "globals/colors?id=primary"
+            },
+            "editor": "No. Halo is built so your team doesn't have to stare at dashboards. AI agents run daily and push prioritized alerts to the right roles. The insight comes to you."
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "53061cf",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "css_classes": "halo-card",
+          "padding": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "d26eb5b",
+           "elType": "widget",
+           "settings": {
+            "title": "Can the AI be customized to our workflows?",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_family": "Syne",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "__globals__": {
+             "title_color": "globals/colors?id=text"
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "92f4542",
+           "elType": "widget",
+           "settings": {
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            },
+            "typography_font_weight": "300",
+            "__globals__": {
+             "text_color": "globals/colors?id=primary"
+            },
+            "editor": "Yes. Alert thresholds, targets, scoring weights, and role-based surfaces are all configurable per rooftop and group. The system learns your baselines over time and adjusts accordingly.\n"
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "e78850e",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "css_classes": "halo-card",
+          "padding": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "e6b27b5",
+           "elType": "widget",
+           "settings": {
+            "title": "What about data ownership and privacy?",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_family": "Syne",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "__globals__": {
+             "title_color": "globals/colors?id=text"
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "60436ec",
+           "elType": "widget",
+           "settings": {
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            },
+            "typography_font_weight": "300",
+            "__globals__": {
+             "text_color": "globals/colors?id=primary"
+            },
+            "editor": "Your data stays in your controlled environment. Halo does not expose your operational data to external LLMs, does not share data across dealer groups, and maintains full audit trails.\n"
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "b1a3c12",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "css_classes": "halo-card",
+          "padding": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "05e2335",
+           "elType": "widget",
+           "settings": {
+            "title": "Can I deploy to one store or my whole group?",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_family": "Syne",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "__globals__": {
+             "title_color": "globals/colors?id=text"
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "5648aa0",
+           "elType": "widget",
+           "settings": {
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            },
+            "typography_font_weight": "300",
+            "__globals__": {
+             "text_color": "globals/colors?id=primary"
+            },
+            "editor": "Both. Halo is modular by design. Start with a single rooftop, validate the value, and expand across your group at your pace. The group-level view activates as more rooftops connect."
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "b28fb6a",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "css_classes": "halo-card",
+          "padding": {
+           "unit": "px",
+           "top": "20",
+           "right": "20",
+           "bottom": "20",
+           "left": "20",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "c25893f",
+           "elType": "widget",
+           "settings": {
+            "title": "How fast can we get live?",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_family": "Syne",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "__globals__": {
+             "title_color": "globals/colors?id=text"
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "1c9965f",
+           "elType": "widget",
+           "settings": {
+            "typography_typography": "custom",
+            "typography_font_family": "DM Sans",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            },
+            "typography_font_weight": "300",
+            "__globals__": {
+             "text_color": "globals/colors?id=primary"
+            },
+            "editor": "Onboarding timelines depend on your data sources and the number of rooftops. We handle the integration configuration \u2014 your team's primary lift is the initial dealer identity mapping setup.\n"
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "149af44",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "row",
+    "background_background": "classic",
+    "padding": {
+     "unit": "px",
+     "top": "100",
+     "right": "0",
+     "bottom": "100",
+     "left": "0",
+     "isLinked": false
+    },
+    "__globals__": {
+     "background_color": "globals/colors?id=ba83fae"
+    }
+   },
+   "elements": [
+    {
+     "id": "82106a1",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "css_classes": "halo-glow"
+     },
+     "elements": [
+      {
+       "id": "c2c7a5a",
+       "elType": "widget",
+       "settings": {
+        "title": "Be first in line when Halo goes live.",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_weight": "800",
+        "__globals__": {
+         "title_color": "globals/colors?id=text"
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "51f4b4a",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>We're onboarding a limited number of dealer groups.</p>",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "Syne",
+        "typography_font_weight": "600",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "296f22f",
+       "elType": "widget",
+       "settings": {
+        "form_name": "New Form",
+        "form_fields": [
+         {
+          "custom_id": "name",
+          "field_label": "First & Last Name",
+          "placeholder": "First & Last Name",
+          "width": "30",
+          "dynamic": {
+           "active": true
+          },
+          "_id": "9e08f33",
+          "required": "true"
+         },
+         {
+          "custom_id": "email",
+          "field_type": "email",
+          "required": "true",
+          "field_label": "Email",
+          "placeholder": "Email",
+          "width": "30",
+          "_id": "0b59d65"
+         }
+        ],
+        "show_labels": "",
+        "button_size": "md",
+        "button_width": "33",
+        "button_align": "end",
+        "step_next_label": "Next",
+        "step_previous_label": "Previous",
+        "button_text": "Join Waitlist",
+        "email_to": "digital@zfmarketing.com",
+        "email_subject": "New message from &quot;Halo&quot;",
+        "email_content": "[all-fields]",
+        "email_from": "email@drivehalo.ai",
+        "email_from_name": "Halo",
+        "email_to_2": "digital@zfmarketing.com",
+        "email_subject_2": "New message from &quot;Halo&quot;",
+        "email_content_2": "[all-fields]",
+        "email_from_2": "email@drivehalo.ai",
+        "email_from_name_2": "Halo",
+        "email_reply_to_2": "digital@zfmarketing.com",
+        "mailchimp_fields_map": [],
+        "drip_fields_map": [],
+        "activecampaign_fields_map": [],
+        "getresponse_fields_map": [],
+        "convertkit_fields_map": [],
+        "mailerlite_fields_map": [],
+        "success_message": "Your submission was successful.",
+        "error_message": "Your submission failed because of an error.",
+        "server_message": "Your submission failed because of a server error.",
+        "invalid_message": "Your submission failed because the form is invalid.",
+        "required_field_message": "This field is required.",
+        "column_gap": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        },
+        "row_gap": {
+         "unit": "px",
+         "size": 40,
+         "sizes": []
+        },
+        "field_text_color": "#F4F6F873",
+        "field_typography_typography": "custom",
+        "field_typography_font_family": "DM Sans",
+        "field_typography_font_weight": "300",
+        "field_background_color": "#FFFFFF00",
+        "field_border_color": "#FFFFFF12",
+        "field_border_width": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "1",
+         "left": "0",
+         "isLinked": false
+        },
+        "field_border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "button_typography_font_family": "Syne",
+        "button_typography_font_weight": "700",
+        "button_text_color": "",
+        "previous_button_text_color": "",
+        "_element_width": "initial",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": 70,
+         "sizes": []
+        },
+        "_flex_align_self": "center",
+        "custom_css": "selector .elementor-button[type=\"submit\"] {  background: #00d2b4 !important;\n  color: #080a0c !important;\n  font-family: 'Syne', sans-serif !important;\n  font-size: 13px !important;\n  font-weight: 600 !important;\n  letter-spacing: 0.06em !important;\n  text-transform: uppercase !important;\n  border-radius: 4px !important;\n  padding: 13px 28px !important;\n  border: none !important;\n  transition: opacity 0.2s !important;\n}\n\nselector .elementor-button[type=\"submit\"]:hover {  opacity: 0.85 !important; }",
+        "__globals__": {
+         "field_border_color": "globals/colors?id=secondary",
+         "field_text_color": "globals/colors?id=primary",
+         "button_text_color": "",
+         "button_background_color": ""
+        }
+       },
+       "elements": [],
+       "widgetType": "form"
+      },
+      {
+       "id": "f7619eb",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>No spam. No unwanted pitch calls. Just early access.</p>",
+        "align": "center",
+        "typography_typography": "custom",
+        "typography_font_family": "DM Sans",
+        "typography_font_weight": "300",
+        "__globals__": {
+         "text_color": "globals/colors?id=primary"
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "_elementor_page_settings": {
+  "hide_title": "yes"
+ }
+}

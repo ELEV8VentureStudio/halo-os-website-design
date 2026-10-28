@@ -1,0 +1,126 @@
+{
+ "system_colors": [
+  {
+   "_id": "accent",
+   "title": "Accent",
+   "color": "#00D2B4"
+  },
+  {
+   "_id": "text",
+   "title": "Text Primary",
+   "color": "#F4F6F8"
+  },
+  {
+   "_id": "primary",
+   "title": "Text Muted",
+   "color": "#F4F6F873"
+  },
+  {
+   "_id": "secondary",
+   "title": "Border",
+   "color": "#FFFFFF12"
+  }
+ ],
+ "custom_colors": [
+  {
+   "_id": "ba83fae",
+   "title": "Background",
+   "color": "#080A0C"
+  },
+  {
+   "_id": "bffbdfc",
+   "title": " Surface/Card",
+   "color": "#111518"
+  },
+  {
+   "_id": "42cdd5b",
+   "title": "HALO Black - ORIGINAL",
+   "color": "#0A0A0B"
+  },
+  {
+   "_id": "cba3955",
+   "title": "Icons/Borders - ORIGINAL",
+   "color": "#8A9099"
+  },
+  {
+   "_id": "bb82e95",
+   "title": "Panels, card backgrounds, header/footer dark surfaces - ORIGINAL",
+   "color": "#2B2E32"
+  },
+  {
+   "_id": "5e465b4",
+   "title": "Light icons, dividers, subtle highlights - ORIGINAL",
+   "color": "#C9CCD1"
+  },
+  {
+   "_id": "19ddcdf",
+   "title": "Light mode backgrounds, high readability text - ORIGINAL",
+   "color": "#F3F4F5"
+  },
+  {
+   "_id": "8f05459",
+   "title": "Interactive elements, highlights, data points, brand energy - ORIGINAL",
+   "color": "#19D4C5"
+  },
+  {
+   "_id": "7793dfc",
+   "title": "Gradients, shadows, depth, selected states - ORIGINAL",
+   "color": "#0F7F8B"
+  }
+ ],
+ "system_typography": [
+  {
+   "_id": "primary",
+   "title": "Primary",
+   "typography_typography": "custom",
+   "typography_font_family": "Syne",
+   "typography_font_weight": "800"
+  },
+  {
+   "_id": "secondary",
+   "title": "Secondary",
+   "typography_typography": "custom",
+   "typography_font_family": "Syne",
+   "typography_font_weight": "600"
+  },
+  {
+   "_id": "text",
+   "title": "Text",
+   "typography_typography": "custom",
+   "typography_font_family": "DM Sans",
+   "typography_font_weight": "400"
+  },
+  {
+   "_id": "accent",
+   "title": "Accent",
+   "typography_typography": "custom",
+   "typography_font_family": "Syne",
+   "typography_font_weight": "500"
+  }
+ ],
+ "custom_typography": [],
+ "default_generic_fonts": "Sans-serif",
+ "site_name": "Halo",
+ "site_logo": {
+  "url": "http://drivehalo.ai/wp-content/uploads/2026/01/Halo-Logo-w-Underline_White-1-scaled.png",
+  "id": 156,
+  "size": "",
+  "alt": "",
+  "source": "library"
+ },
+ "site_favicon": {
+  "url": "http://drivehalo.ai/wp-content/uploads/2026/01/Transparent-PNG-06-1-scaled.png",
+  "id": 33,
+  "size": "",
+  "alt": "",
+  "source": "library"
+ },
+ "page_title_selector": "h1.entry-title",
+ "viewport_md": 768,
+ "viewport_lg": 1025,
+ "colors_enable_styleguide_preview": "yes",
+ "activeItemIndex": 1,
+ "typography_enable_styleguide_preview": "yes",
+ "body_typography_typography": "custom",
+ "custom_css": "/* Base */\nbody {\n  background: #080a0c;\n  -webkit-font-smoothing: antialiased;\n}\n\n/* Noise overlay */\nbody::before {\n  content: '';\n  position: fixed;\n  inset: 0;\n  z-index: 0;\n  pointer-events: none;\n  opacity: 0.025;\n  background-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\");\n  background-size: 200px;\n}\n\n/* Grid line hero background \u2014 apply class .halo-grid to any section */\n.halo-grid {\n  background-image:\n    linear-gradient(rgba(0,210,180,0.04) 1px, transparent 1px),\n    linear-gradient(90deg, rgba(0,210,180,0.04) 1px, transparent 1px);\n  background-size: 60px 60px;\n}\n\n/* Teal ambient glow \u2014 apply class .halo-glow to any section */\n.halo-glow::before {\n  content: '';\n  position: absolute;\n  inset: 0;\n  background: radial-gradient(ellipse 70% 50% at 50% 30%, rgba(0,210,180,0.07) 0%, transparent 60%);\n  pointer-events: none;\n  z-index: 0;\n}\n\n/* Halo card \u2014 apply class .halo-card to any inner section or widget wrapper */\n.halo-card {\n  background: #111518;\n  border: 1px solid rgba(255,255,255,0.07);\n  border-radius: 8px;\n  transition: border-color 0.25s, transform 0.25s;\n}\n\n.halo-card:hover {\n  border-color: rgba(0,210,180,0.3);\n  transform: translateY(-3px);\n}\n\n/* Teal top-line card \u2014 apply class .halo-card-line */\n.halo-card-line {\n  background: #141820;\n  border: 1px solid rgba(255,255,255,0.07);\n  border-radius: 0;\n  position: relative;\n  overflow: hidden;\n  transition: background 0.2s;\n}\n\n.halo-card-line::before {\n  content: '';\n  position: absolute;\n  top: 0; left: 0; right: 0;\n  height: 2px;\n  background: #00d2b4;\n  transform: scaleX(0);\n  transform-origin: left;\n  transition: transform 0.3s ease;\n  z-index: 1;\n}\n\n.halo-card-line:hover::before { transform: scaleX(1); }\n.halo-card-line:hover { background: rgba(20,24,32,0.95); }\n\n/* Glowing dot \u2014 add an HTML widget with <div class=\"halo-dot\"></div> */\n.halo-dot {\n  width: 8px;\n  height: 8px;\n  border-radius: 50%;\n  background: #00d2b4;\n  box-shadow: 0 0 10px rgba(0,210,180,0.6);\n  display: inline-block;\n}\n\n.halo-dot-pulse {\n  width: 8px;\n  height: 8px;\n  border-radius: 50%;\n  background: #00d2b4;\n  animation: halo-pulse 2s ease-in-out infinite;\n  display: inline-block;\n}\n\n@keyframes halo-pulse {\n  0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 8px rgba(0,210,180,0.5); }\n  50% { opacity: 0.5; transform: scale(0.8); box-shadow: 0 0 4px rgba(0,210,180,0.2); }\n}\n\n/* Badge pill \u2014 apply class .halo-badge to a button or text widget */\n.halo-badge {\n  display: inline-flex;\n  align-items: center;\n  gap: 8px;\n  padding: 6px 16px;\n  border: 1px solid rgba(0,210,180,0.3);\n  border-radius: 100px;\n  font-size: 11px;\n  font-weight: 500;\n  letter-spacing: 0.14em;\n  text-transform: uppercase;\n  color: #00d2b4;\n  background: rgba(0,210,180,0.06);\n}\n\n/* Signal/tag chip */\n.halo-tag {\n  font-size: 11px;\n  padding: 4px 10px;\n  border: 1px solid rgba(0,210,180,0.2);\n  color: rgba(0,210,180,0.7);\n  letter-spacing: 0.04em;\n  display: inline-block;\n  border-radius: 3px;\n}\n\n/* Section eyebrow */\n.halo-eyebrow {\n  font-size: 10px;\n  font-weight: 600;\n  letter-spacing: 0.22em;\n  text-transform: uppercase;\n  color: #00d2b4;\n  display: block;\n  margin-bottom: 16px;\n  font-family: 'Syne', sans-serif;\n}\n\n/* Primary button */\n.halo-btn {\n  background: #00d2b4 !important;\n  color: #080a0c !important;\n  font-family: 'Syne', sans-serif !important;\n  font-size: 13px !important;\n  font-weight: 600 !important;\n  letter-spacing: 0.06em !important;\n  text-transform: uppercase !important;\n  border-radius: 4px !important;\n  padding: 13px 28px !important;\n  border: none !important;\n  transition: opacity 0.2s !important;\n}\n\n.halo-btn:hover { opacity: 0.85 !important; }\n\n/* Ghost button */\n.halo-btn-ghost {\n  background: transparent !important;\n  color: #f4f6f8 !important;\n  font-family: 'Syne', sans-serif !important;\n  font-size: 13px !important;\n  font-weight: 500 !important;\n  letter-spacing: 0.04em !important;\n  border: 1px solid rgba(255,255,255,0.15) !important;\n  border-radius: 4px !important;\n  padding: 13px 28px !important;\n  transition: border-color 0.2s !important;\n}\n\n.halo-btn-ghost:hover { border-color: rgba(255,255,255,0.4) !important; }\n\n/* Fade-up entrance animation */\n@keyframes halo-fadeup {\n  from { opacity: 0; transform: translateY(20px); }\n  to   { opacity: 1; transform: translateY(0); }\n}\n\n.halo-animate {\n  animation: halo-fadeup 0.7s ease both;\n}\n\n.halo-animate-1 { animation-delay: 0.1s; }\n.halo-animate-2 { animation-delay: 0.2s; }\n.halo-animate-3 { animation-delay: 0.3s; }\n.halo-animate-4 { animation-delay: 0.4s; }"
+}

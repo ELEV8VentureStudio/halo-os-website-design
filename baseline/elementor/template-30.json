@@ -1,0 +1,472 @@
+{
+ "id": 30,
+ "title": "Elementor Header #30",
+ "type": "header",
+ "conditions": [
+  "include/general"
+ ],
+ "_elementor_data": [
+  {
+   "id": "8b05ead",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "row",
+    "background_background": "classic",
+    "flex_justify_content": "center",
+    "boxed_width": {
+     "unit": "px",
+     "size": 1600,
+     "sizes": []
+    },
+    "border_border": "solid",
+    "border_width": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "1",
+     "left": "0",
+     "isLinked": false
+    },
+    "border_color": "#FFFFFF12",
+    "sticky": "top",
+    "__globals__": {
+     "background_color": "globals/colors?id=ba83fae"
+    }
+   },
+   "elements": [
+    {
+     "id": "8948dc8",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "background_background": "classic",
+      "border_border": "none",
+      "border_width": {
+       "unit": "px",
+       "top": "1",
+       "right": "1",
+       "bottom": "1",
+       "left": "1",
+       "isLinked": true
+      },
+      "border_radius": {
+       "unit": "px",
+       "top": "50",
+       "right": "50",
+       "bottom": "50",
+       "left": "50",
+       "isLinked": true
+      },
+      "__globals__": {
+       "border_color": "globals/colors?id=cba3955",
+       "background_color": ""
+      },
+      "width": {
+       "unit": "%",
+       "size": 100,
+       "sizes": []
+      },
+      "border_color": "#8A9099",
+      "margin": {
+       "unit": "px",
+       "top": "20",
+       "right": "0",
+       "bottom": "20",
+       "left": "0",
+       "isLinked": false
+      },
+      "padding": {
+       "unit": "px",
+       "top": "5",
+       "right": "0",
+       "bottom": "05",
+       "left": "0",
+       "isLinked": false
+      },
+      "z_index": 2
+     },
+     "elements": [
+      {
+       "id": "e9e67d6",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 25
+        },
+        "flex_justify_content": "center",
+        "flex_align_items": "flex-start",
+        "_flex_size": "none",
+        "_element_width": "initial",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "10",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "42081c1",
+         "elType": "widget",
+         "settings": {
+          "__dynamic__": {
+           "image": "[elementor-tag id=\"\" name=\"site-logo\" settings=\"%7B%7D\"]"
+          },
+          "width": {
+           "unit": "%",
+           "size": 35,
+           "sizes": []
+          },
+          "space": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "align": "center"
+         },
+         "elements": [],
+         "widgetType": "theme-site-logo"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "4d8ae5a",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 50
+        },
+        "flex_justify_content": "center",
+        "flex_align_items": "center",
+        "_flex_size": "none",
+        "_element_width": "initial"
+       },
+       "elements": [
+        {
+         "id": "ed6e8f5",
+         "elType": "widget",
+         "settings": {
+          "menu": "main-menu",
+          "pointer": "none",
+          "__globals__": {
+           "color_menu_item": "globals/colors?id=19ddcdf",
+           "color_menu_item_hover": "globals/colors?id=primary",
+           "color_menu_item_active": "globals/colors?id=accent"
+          },
+          "menu_typography_typography": "custom",
+          "menu_typography_font_family": "Syne"
+         },
+         "elements": [],
+         "widgetType": "nav-menu"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a6b120b",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_justify_content": "center",
+        "flex_align_items": "center",
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "width": {
+         "unit": "%",
+         "size": 25,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "12a2548",
+         "elType": "widget",
+         "settings": {
+          "text": "Join Waitlist",
+          "background_color": "#02010100",
+          "border_border": "none",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "25",
+           "right": "25",
+           "bottom": "25",
+           "left": "25",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "",
+           "button_text_color": "globals/colors?id=42cdd5b"
+          },
+          "link": {
+           "url": "#waitlist",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "hover_animation": "grow",
+          "align": "center",
+          "_css_classes": "halo-btn"
+         },
+         "elements": [],
+         "widgetType": "button"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "043051a",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "row",
+    "background_background": "classic",
+    "background_color": "#0A0A0B",
+    "flex_justify_content": "center",
+    "hide_desktop": "hidden-desktop",
+    "hide_tablet": "hidden-tablet",
+    "hide_mobile": "hidden-mobile"
+   },
+   "elements": [
+    {
+     "id": "ff98b09",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "background_background": "classic",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "1",
+       "right": "1",
+       "bottom": "1",
+       "left": "1",
+       "isLinked": true
+      },
+      "border_radius": {
+       "unit": "px",
+       "top": "50",
+       "right": "50",
+       "bottom": "50",
+       "left": "50",
+       "isLinked": true
+      },
+      "__globals__": {
+       "border_color": "globals/colors?id=cba3955",
+       "background_color": ""
+      },
+      "width": {
+       "unit": "%",
+       "size": 75,
+       "sizes": []
+      },
+      "background_color": "#161618",
+      "border_color": "#8A9099",
+      "margin": {
+       "unit": "px",
+       "top": "20",
+       "right": "0",
+       "bottom": "20",
+       "left": "0",
+       "isLinked": false
+      },
+      "padding": {
+       "unit": "px",
+       "top": "5",
+       "right": "0",
+       "bottom": "05",
+       "left": "0",
+       "isLinked": false
+      },
+      "z_index": 2
+     },
+     "elements": [
+      {
+       "id": "264a4fa",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 20
+        },
+        "flex_justify_content": "center",
+        "flex_align_items": "flex-start",
+        "_flex_size": "none",
+        "_element_width": "initial",
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "10",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "e688a27",
+         "elType": "widget",
+         "settings": {
+          "__dynamic__": {
+           "image": "[elementor-tag id=\"\" name=\"site-logo\" settings=\"%7B%7D\"]"
+          },
+          "width": {
+           "unit": "%",
+           "size": 60,
+           "sizes": []
+          },
+          "space": {
+           "unit": "%",
+           "size": 100,
+           "sizes": []
+          },
+          "align": "center"
+         },
+         "elements": [],
+         "widgetType": "theme-site-logo"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "4f2d4af",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 50
+        },
+        "flex_justify_content": "center",
+        "flex_align_items": "center",
+        "_flex_size": "none",
+        "_element_width": "initial"
+       },
+       "elements": [
+        {
+         "id": "3ababb6",
+         "elType": "widget",
+         "settings": {
+          "menu": "main-menu",
+          "pointer": "none",
+          "__globals__": {
+           "color_menu_item": "globals/colors?id=19ddcdf",
+           "color_menu_item_hover": "globals/colors?id=primary",
+           "color_menu_item_active": "globals/colors?id=accent"
+          }
+         },
+         "elements": [],
+         "widgetType": "nav-menu"
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "75565d1",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_justify_content": "center",
+        "flex_align_items": "flex-end",
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "padding": {
+         "unit": "px",
+         "top": "0",
+         "right": "020",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "4edb922",
+         "elType": "widget",
+         "settings": {
+          "text": "Join Waitlist",
+          "background_color": "#02010100",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_radius": {
+           "unit": "px",
+           "top": "25",
+           "right": "25",
+           "bottom": "25",
+           "left": "25",
+           "isLinked": true
+          },
+          "__globals__": {
+           "border_color": "globals/colors?id=primary"
+          },
+          "link": {
+           "url": "#waitlist",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "hover_animation": "grow"
+         },
+         "elements": [],
+         "widgetType": "button"
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  }
+ ]
+}
