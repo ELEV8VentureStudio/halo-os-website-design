@@ -97,3 +97,51 @@ Rules for the recommended wording:
 - No jargon a dealer principal wouldn't use. No absolute words like "never", "guaranteed", "bank-level", "military-grade", or "100% secure" unless I can prove them.
 - Finish with any NEW statements worth adding that I've shown to be true (e.g. encryption, hosting region, SSO), plus a list of anything that should go to legal before launch.
 ```
+
+---
+
+## Prompt 4 — How It Works + FAQs (for the HALO OS product project)
+
+Paste into the Claude project that holds the HALO OS codebase/docs. The
+answers must come from the actual product, not marketing assumptions.
+
+```
+I'm writing two pages for the HALO OS launch website (drivehalo.ai): "How It Works" and "FAQs". Everything on them has to be true for the product as it exists today. Use the codebase, docs, and files in this project as your only source of truth.
+
+STEP 1 — Research first. From this project, establish and list with a source reference (file/path/doc) for each:
+- Every data source/integration Halo connects to today (DMS, CRM, inventory, marketing, other), and how: API, file feed (e.g. DealerVault), or manual upload. Mark each as Live, Beta, or Planned.
+- How onboarding works step by step: what the dealer provides, what our team does, what the dealer's team has to do (e.g. dealer ID mapping), and any realistic timeframe if one is documented.
+- How often data refreshes and how often analysis/alerts run (real-time, hourly, nightly?).
+- What alerts/agents exist per profit center (Inventory, Sales, Service, Marketing, Retention, Executive View), and which roles receive them.
+- How alerts reach people (in-app, email, SMS, Slack, etc.).
+- How outcomes are tracked after an alert is acted on.
+- What's configurable per rooftop and per group (thresholds, targets, roles, permissions).
+- Anything about data storage, access control, and AI model usage that a dealer would ask about.
+If something isn't documented, write "NOT FOUND". Don't guess.
+
+STEP 2 — Write the How It Works page in exactly this format:
+
+H1: (max 6 words; current draft is "Connect. Identify. Act.", so keep it unless the research suggests something better)
+LEAD: (one sentence, max 22 words)
+STEP 1 | kicker: Step one | title: (max 5 words) | body: (max 35 words)
+STEP 2 | kicker: Step two | title: (max 5 words) | body: (max 35 words)
+STEP 3 | kicker: Step three | title: (max 5 words) | body: (max 35 words)
+SCREEN SUGGESTION: (which Halo screen best illustrates this page, and why)
+
+STEP 3 — Write 6 to 8 FAQs in exactly this format:
+
+Q1: (the question in a dealer's words, max 14 words)
+A1: (max 50 words, a direct answer first, then one supporting detail)
+...
+
+Cover at least: does it replace my DMS/CRM/tools; is it another dashboard; can I start with one store; how long setup takes and what my team has to do; which systems it connects to; can alerts match how we run our stores; who owns the data. Add others only if they're questions dealers actually ask and the answer is documented.
+
+Rules:
+- Write like a dealer talking to another dealer: short sentences, concrete nouns, no hype.
+- Don't use: revolutionize, unlock, seamless, cutting-edge, game-changer, empower, leverage, AI-powered insights, "in today's fast-paced world".
+- Every factual claim must trace back to something in Step 1. If it's Planned or Beta, either leave it out or say so plainly.
+- No customer names, dealer names, phone numbers, or VINs.
+- Don't repeat the same point across FAQs. Each answer should add something.
+
+STEP 4 — End with a short "VERIFY BEFORE PUBLISHING" list: any statement that relies on a Beta/Planned feature, an undocumented timeframe, or a security/data claim that legal or the founder should confirm.
+```
