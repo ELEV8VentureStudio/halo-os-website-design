@@ -23,7 +23,7 @@ OUT = ROOT / "build" / "out"
 CA = "/root/.ccr/ca-bundle.crt"
 PASSWORD = os.environ.get("HALO_PREVIEW_PASSWORD", "HaloPreview27")
 # Pages open to the public; everything else stays behind PASSWORD until content is final.
-PUBLIC = {"home-v2", "request-a-demo"}
+PUBLIC = {"home-v2", "waitlist"}
 CSS_START = "/* ==== HALO-V2 START ==== */"
 CSS_END = "/* ==== HALO-V2 END ==== */"
 
@@ -119,7 +119,7 @@ def demo_cta():
         heading(c["h2"], "h2", "hv2-h2"),
         con("hv2-cta-side",
             text(f"<p>{c['body']}</p>", "hv2-lead"),
-            button(c["button"], url("request-a-demo"))),
+            button(c["button"], url("waitlist"))),
     )
 
 
@@ -150,31 +150,36 @@ def rows(items, intro=None):
 # --------------------------------------------------------------------------
 # Pages
 # --------------------------------------------------------------------------
-def build_home():
+def build_home(menu_slug):
     c = content.HOME
-    mid, src = MEDIA["film"]
-    pid, psrc = MEDIA["poster"]
-    film = widget(
-        "video", "",
-        video_type="hosted",
-        hosted_url={"url": src, "id": mid, "source": "library"},
-        autoplay="", mute="", loop="", controls="yes", play_on_mobile="yes",
-        show_image_overlay="yes",
-        image_overlay={"url": psrc, "id": pid, "source": "library"},
-        show_play_icon="yes",
-        lazy_load="yes",
-        _element_id="film",
+    _, src = MEDIA["film"]
+    _, psrc = MEDIA["poster"]
+    stage = html(
+        FONTS +
+        '<div class="hv2-stage" id="film">'
+        f'<video autoplay muted loop playsinline preload="auto" poster="{psrc}" aria-label="Halo OS brand film">'
+        f'<source src="{src}" type="video/mp4"></video>'
+        '<button class="hv2-sound" type="button" aria-pressed="false">'
+        '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/>'
+        '<path class="w" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>'
+        '<span class="t">Sound on</span></button></div>'
+        '<script>(function(){var w=document.getElementById("film");if(!w)return;'
+        'var v=w.querySelector("video"),b=w.querySelector(".hv2-sound"),t=b.querySelector(".t"),first=true;'
+        'if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){v.pause();v.controls=true;}'
+        'else{var p=v.play();if(p&&p.catch)p.catch(function(){v.controls=true;});}'
+        'b.addEventListener("click",function(){if(v.muted){if(first){v.currentTime=0;first=false;}'
+        'v.muted=false;v.play();t.textContent="Sound off";b.setAttribute("aria-pressed","true");w.classList.add("is-sound");}'
+        'else{v.muted=true;t.textContent="Sound on";b.setAttribute("aria-pressed","false");w.classList.remove("is-sound");}});})();</script>'
     )
     return [
+        con("hv2 hv2-section hv2-stage-sec", stage, inner=False),
+        header_bar(menu_slug, "hv2-header--inpage"),
         section("hv2-hero",
                 label("", c["label"]),
                 heading(c["h1"], "h1", "hv2-h1"),
                 con("hv2-hero-foot",
                     text(f"<p>{c['tagline']}</p>", "hv2-tagline"),
-                    con("hv2-btn-row",
-                        button(c["primary"], url("request-a-demo"), "hv2-btn"),
-                        button(c["secondary"], "#film", "hv2-btn-ghost")))),
-        section("hv2-film", film, text(f"<p>{c['caption']}</p>", "hv2-caption")),
+                    con("hv2-btn-row", button(c["primary"], url("waitlist"), "hv2-btn")))),
     ]
 
 
@@ -216,7 +221,7 @@ def build_demo():
         f["_id"] = _id()
     form = widget(
         "form", "hv2-form",
-        form_name="Request a Demo",
+        form_name="Wait List",
         form_fields=fields,
         show_labels="yes",
         mark_required="",
@@ -224,7 +229,7 @@ def build_demo():
         button_width="100",
         submit_actions=["email"],
         email_to="david@drivehalo.ai",
-        email_subject='Halo demo request: [field id="dealership"] ([field id="rooftops"] rooftops)',
+        email_subject='Halo wait list: [field id="dealership"] ([field id="rooftops"] rooftops)',
         email_content="[all-fields]",
         email_from="email@drivehalo.ai",
         email_from_name="Halo",
@@ -257,21 +262,24 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
          '&family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@600;700&display=swap">')
 
 
-def build_header(menu_slug):
+def header_bar(menu_slug, extra=""):
     logo = image("logo", "hv2-logo", alt="Halo — Automotive Intelligence")
     logo["settings"]["link_to"] = "custom"
     logo["settings"]["link"] = {"url": url("home-v2"), "is_external": "", "nofollow": ""}
     nav = widget("nav-menu", "hv2-nav", menu=menu_slug, layout="horizontal", align_items="center",
                  pointer="none", dropdown="tablet", toggle="burger", full_width="stretch",
                  text_align="aside")
-    top = con("hv2 hv2-header",
-              con("hv2-wrap",
-                  html(FONTS),
-                  logo,
-                  nav,
-                  con("hv2-head-cta", button("Request a demo", url("request-a-demo"), "hv2-btn"))),
-              inner=False, sticky="top", sticky_on=["desktop", "tablet", "mobile"])
-    return [top]
+    return con(f"hv2 hv2-header {extra}".strip(),
+               con("hv2-wrap",
+                   html(FONTS),
+                   logo,
+                   nav,
+                   con("hv2-head-cta", button(content.CTA_LABEL, url("waitlist"), "hv2-btn"))),
+               inner=False, sticky="top", sticky_on=["desktop", "tablet", "mobile"])
+
+
+def build_header(menu_slug):
+    return [header_bar(menu_slug)]
 
 
 def build_footer():
@@ -300,7 +308,7 @@ def find_page(slug):
     return r[0] if r else None
 
 
-def upsert_page(slug, title, data, dry):
+def upsert_page(slug, title, data, dry, page_settings=None):
     (OUT / f"page-{slug}.json").write_text(json.dumps(data, indent=1))
     if dry:
         return None
@@ -313,7 +321,7 @@ def upsert_page(slug, title, data, dry):
             **ASTRA_META,
             "_elementor_edit_mode": "builder",
             "_elementor_template_type": "wp-page",
-            "_elementor_page_settings": {"hide_title": "yes"},
+            "_elementor_page_settings": {"hide_title": "yes", **(page_settings or {})},
             "_elementor_data": json.dumps(data),
         },
     }
@@ -392,14 +400,18 @@ def main():
         return
 
     pages = {}
-    pages["home-v2"] = upsert_page("home-v2", "Home (v2)", build_home(), args.dry_run)
+    menu_slug = "main-menu-v2"
+    # Home: film first, then the menu bar, so the site template header is hidden there.
+    pages["home-v2"] = upsert_page("home-v2", "Home (v2)", build_home(menu_slug), args.dry_run,
+                                   {"custom_css": "body .elementor-location-header { display: none; }"})
     for key in content.PAGES:
         pages[key] = upsert_page(key, content.PAGES[key]["title"], build_pillar(key), args.dry_run)
-    pages["request-a-demo"] = upsert_page("request-a-demo", "Request a Demo", build_demo(), args.dry_run)
+    pages["waitlist"] = upsert_page("waitlist", "Join the Wait List", build_demo(), args.dry_run)
 
     menu_slug = ensure_menu(pages, args.dry_run)
     ids = [pid for pid in pages.values() if pid]
-    upsert_template("Header v2", "header", build_header(menu_slug), ids, args.dry_run)
+    upsert_template("Header v2", "header", build_header(menu_slug),
+                    [pid for slug, pid in pages.items() if pid and slug != "home-v2"], args.dry_run)
     upsert_template("Footer v2", "footer", build_footer(), ids, args.dry_run)
     if not args.dry_run:
         flush()

@@ -25,15 +25,15 @@ HOME = {
     "label": "Halo OS — By invitation, for select dealer groups",
     "h1": "Total Command of Your Dealership.",
     "tagline": "Your Dealership. <em>Your Data.</em> Powered by AI.",
-    "primary": "Request a demo →",
-    "secondary": "Watch the film · 1:22",
-    "caption": "The Halo OS film. 82 seconds, sound on.",
+    "primary": "Join the Wait List",
 }
+
+CTA_LABEL = "Join the Wait List"
 
 CTA = {
     "h2": "See Halo on your own stores’ numbers.",
-    "body": "Halo onboards a limited number of dealer groups by invitation. Request a demo to see if yours is a fit.",
-    "button": "Request a demo →",
+    "body": "Halo onboards a limited number of dealer groups by invitation. Join the wait list to see if yours is a fit.",
+    "button": "Join the Wait List",
 }
 
 PAGES = {
@@ -192,16 +192,16 @@ PAGES["faqs"]["body_html"] = '<div class="hv2-faq">' + "".join(
     for i, (q, a) in enumerate(FAQS, 1)) + "</div>"
 
 DEMO = {
-    "label": "Request a demo · By invitation",
+    "label": "Wait list · By invitation",
     "h1": "See Halo on your own numbers.",
-    "lead": "Halo is invite-only. We onboard a limited number of dealer groups at a time so every rollout gets the attention it needs. Tell us about yours.",
+    "lead": "Halo is invite-only. We onboard a limited number of dealer groups at a time so every rollout gets the attention it needs. Join the wait list and tell us about your group.",
     "next": [
         "A real person reviews every request. No automated drip.",
-        "If it looks like a fit, we’ll reach out to schedule a walkthrough.",
+        "If your group is a fit, we’ll reach out with an invitation and a walkthrough.",
         "The walkthrough focuses on your stores, not a canned slide deck.",
     ],
-    "button": "Request my demo →",
-    "success": "Got it, thank you. We’ll be in touch shortly to set up your walkthrough.",
+    "button": "Join the Wait List",
+    "success": "You’re on the list. If your group is a fit, we’ll reach out with an invitation.",
 }
 
 FOOTER = {
@@ -210,7 +210,7 @@ FOOTER = {
         {"title": "Product", "links": [("Platform", f"{SITE}/platform/"), ("The Halo Effect", f"{SITE}/the-halo-effect/"),
                                         ("How It Works", f"{SITE}/how-it-works/"), ("Security", f"{SITE}/security/")]},
         {"title": "Company", "links": [("About", f"{SITE}/about/"), ("FAQs", f"{SITE}/faqs/"),
-                                        ("Request a demo", f"{SITE}/request-a-demo/")]},
+                                        ("Join the Wait List", f"{SITE}/waitlist/")]},
         {"title": "Legal", "links": [("Privacy Policy", f"{SITE}/privacy-policy/"), ("Terms of Use", f"{SITE}/terms/")]},
     ],
     "legal": "© 2026 Halo OS. All rights reserved.",
