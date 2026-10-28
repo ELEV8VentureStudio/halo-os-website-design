@@ -322,7 +322,7 @@ def find_page(slug):
     return r[0] if r else None
 
 
-def upsert_page(slug, title, data, dry, page_settings=None):
+def upsert_page(slug, title, data, dry, page_settings=None, meta=None):
     (OUT / f"page-{slug}.json").write_text(json.dumps(data, indent=1))
     if dry:
         return None
@@ -333,6 +333,7 @@ def upsert_page(slug, title, data, dry, page_settings=None):
         "password": PASSWORD if slug in PRIVATE else "",
         "meta": {
             **ASTRA_META,
+            **(meta or {}),
             "_elementor_edit_mode": "builder",
             "_elementor_template_type": "wp-page",
             "_elementor_page_settings": {"hide_title": "yes", **(page_settings or {})},
@@ -416,7 +417,13 @@ def main():
     menu_slug = "main-menu-v2"
     # Home: film first, then the menu bar, so the site template header is hidden there.
     pages["home"] = upsert_page("home", "Home", build_home(menu_slug), args.dry_run,
-                                   {"custom_css": "body .elementor-location-header { display: none; }"})
+                                   {"custom_css": "body .elementor-location-header { display: none; }"},
+                                   # No template header here, so stop Astra falling back to its own header.
+                                   {"ast-global-header-display": "disabled",
+                                    "ast-main-header-display": "disabled",
+                                    "ast-hfb-above-header-display": "disabled",
+                                    "ast-hfb-below-header-display": "disabled",
+                                    "ast-hfb-mobile-header-display": "disabled"})
     for key in content.PAGES:
         pages[key] = upsert_page(key, content.PAGES[key]["title"], build_pillar(key), args.dry_run)
     pages["waitlist"] = upsert_page("waitlist", "Join the Wait List", build_demo(), args.dry_run)
