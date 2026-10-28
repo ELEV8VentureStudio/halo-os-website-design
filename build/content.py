@@ -233,8 +233,8 @@ FOOTER = {
 # Correction: client draft said the site uses Google Analytics. It doesn't
 # (checked 2026-10-28): Cloudflare Web Analytics (cookieless) + Google Fonts.
 # --------------------------------------------------------------------------
-LEGAL_UPDATED = "October 28, 2026"
-LEGAL_CONTACT = "david@drivehalo.ai"
+LEGAL_UPDATED = "January 2026"
+LEGAL_CONTACT = "hello@drivehalo.ai"
 MAIL = f'<a href="mailto:{LEGAL_CONTACT}">{LEGAL_CONTACT}</a>'
 
 PRIVACY_SECTIONS = [

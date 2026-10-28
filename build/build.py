@@ -249,7 +249,7 @@ def build_demo():
         email_from_name="Halo",
         email_reply_to='[field id="email"]',
         success_message=c["success"],
-        error_message="Something went wrong. Email david@drivehalo.ai and we'll take it from there.",
+        error_message="Something went wrong. Email hello@drivehalo.ai and we'll take it from there.",
         required_field_message="Required.",
         column_gap={"unit": "px", "size": 16, "sizes": []},
         row_gap={"unit": "px", "size": 4, "sizes": []},

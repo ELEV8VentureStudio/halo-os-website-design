@@ -8,7 +8,7 @@ Based on the client's "Halo Security, Privacy and Terms copy" (Oct 28, 2026).
 
 - **Analytics corrected:** client draft said the site uses Google Analytics. The live site runs Cloudflare Web Analytics (cookieless) and Google Fonts only (verified 2026-10-28). If GA4 or ad pixels are added later, update the policy and add cookie consent first.
 - **Wait list fields added** to "Information about you": phone number, role, number of rooftops (the form collects them).
-- **Placeholders:** [Halo legal entity] → "Halo OS"; [privacy email] / [Email] → david@drivehalo.ai; [date] → October 28, 2026.
+- **Placeholders:** [Halo legal entity] → "Halo OS"; [privacy email] / [Email] → hello@drivehalo.ai; [date] → January 2026.
 - **Omitted until provided:** mailing address (both pages) and the Governing law clause in Terms ("[state]").
 - **FAQ "Who owns the data? You do."** reworded to "What happens to our data?" — ownership isn't in a customer contract yet.
 
@@ -67,7 +67,7 @@ We keep dealer data for the length of our contract with the dealer, then return 
 
 ## 8. Your choices and rights
 
-You can ask to access, correct or delete your personal information, or opt out of marketing emails, by contacting david@drivehalo.ai. Depending on where you live, you may have more rights under state law.
+You can ask to access, correct or delete your personal information, or opt out of marketing emails, by contacting hello@drivehalo.ai. Depending on where you live, you may have more rights under state law.
 
 ## 9. Cookies and analytics
 
@@ -75,7 +75,7 @@ Our website uses Cloudflare Web Analytics, a privacy-focused tool that doesn’t
 
 ## 10. Contact
 
-david@drivehalo.ai
+hello@drivehalo.ai
 
 ---
 
@@ -127,10 +127,10 @@ We may update these terms. The date below shows when they last changed. Continui
 
 ## 10. Contact
 
-david@drivehalo.ai
+hello@drivehalo.ai
 
 ## Governing law (pending)
 
 These terms are governed by the laws of [state].
 
-_Last updated: October 28, 2026_
+_Last updated: January 2026_
