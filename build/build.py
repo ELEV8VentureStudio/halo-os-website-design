@@ -22,6 +22,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "build" / "out"
 CA = "/root/.ccr/ca-bundle.crt"
 PASSWORD = os.environ.get("HALO_PREVIEW_PASSWORD", "HaloPreview27")
+V1_TEMPLATES = (30, 77)  # original Elementor header/footer
 # All v2 pages are public. Add slugs to PRIVATE to put a page back behind PASSWORD.
 PRIVATE = set()
 CSS_START = "/* ==== HALO-V2 START ==== */"
@@ -183,6 +184,15 @@ def build_home(menu_slug):
     ]
 
 
+def people_html(people):
+    cards = []
+    for name, title, bio in people:
+        initials = "".join(w[0] for w in name.split()[:2]).upper()
+        cards.append(f'<div class="hv2-person"><div class="mono" aria-hidden="true">{initials}</div>'
+                     f'<h3>{name}</h3><p class="role">{title}</p>' + (f"<p>{bio}</p>" if bio else "") + "</div>")
+    return f'<div class="hv2-people">{"".join(cards)}</div>'
+
+
 def build_pillar(key):
     c = content.PAGES[key]
     els = [page_head(c["num"], c["name"], c["h1"], c["lead"])]
@@ -202,7 +212,8 @@ def build_pillar(key):
                            con("hv2-story",
                                con("hv2-story-k", text(st["quote"], "hv2-quote")),
                                con("hv2-story-v", text(st["body"], "hv2-body"))),
-                           html(st["people_html"])))
+                           heading(st["people_title"], "h2", "hv2-h2 hv2-rows-intro"),
+                           html(people_html(st["people"]))))
     els.append(demo_cta())
     return els
 
@@ -265,7 +276,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
 def header_bar(menu_slug, extra=""):
     logo = image("logo", "hv2-logo", alt="Halo — Automotive Intelligence")
     logo["settings"]["link_to"] = "custom"
-    logo["settings"]["link"] = {"url": url("home-v2"), "is_external": "", "nofollow": ""}
+    logo["settings"]["link"] = {"url": f"{SITE}/", "is_external": "", "nofollow": ""}
     nav = widget("nav-menu", "hv2-nav", menu=menu_slug, layout="horizontal", align_items="center",
                  pointer="none", dropdown="tablet", toggle="burger", full_width="stretch",
                  text_align="aside")
@@ -331,7 +342,7 @@ def upsert_page(slug, title, data, dry, page_settings=None):
     return res["id"]
 
 
-def upsert_template(title, kind, data, page_ids, dry):
+def upsert_template(title, kind, data, conds, dry):
     (OUT / f"template-{kind}.json").write_text(json.dumps(data, indent=1))
     if dry:
         return None
@@ -345,9 +356,8 @@ def upsert_template(title, kind, data, page_ids, dry):
         api("POST", f"/wp/v2/elementor_library/{tid}", json=body)
     else:
         tid = api("POST", "/wp/v2/elementor_library", json=body)["id"]
-    conds = [{"type": "include", "name": "singular", "sub_name": "page", "sub_id": str(pid)} for pid in page_ids]
     api("PUT", f"/elementor/v1/site-editor/templates-conditions/{tid}", json={"conditions": conds})
-    print(f"{kind} template {tid} -> pages {page_ids}")
+    print(f"{kind} template {tid} -> {conds}")
     return tid
 
 
@@ -402,18 +412,25 @@ def main():
     pages = {}
     menu_slug = "main-menu-v2"
     # Home: film first, then the menu bar, so the site template header is hidden there.
-    pages["home-v2"] = upsert_page("home-v2", "Home (v2)", build_home(menu_slug), args.dry_run,
+    pages["home"] = upsert_page("home", "Home", build_home(menu_slug), args.dry_run,
                                    {"custom_css": "body .elementor-location-header { display: none; }"})
     for key in content.PAGES:
         pages[key] = upsert_page(key, content.PAGES[key]["title"], build_pillar(key), args.dry_run)
     pages["waitlist"] = upsert_page("waitlist", "Join the Wait List", build_demo(), args.dry_run)
 
     menu_slug = ensure_menu(pages, args.dry_run)
-    ids = [pid for pid in pages.values() if pid]
+    site_wide = [{"type": "include", "name": "general", "sub_name": "", "sub_id": ""}]
+    # Home renders its own menu bar under the film, so it opts out of the template header.
     upsert_template("Header v2", "header", build_header(menu_slug),
-                    [pid for slug, pid in pages.items() if pid and slug != "home-v2"], args.dry_run)
-    upsert_template("Footer v2", "footer", build_footer(), ids, args.dry_run)
+                    site_wide + [{"type": "exclude", "name": "singular", "sub_name": "page",
+                                  "sub_id": str(pages["home"])}] if pages["home"] else site_wide, args.dry_run)
+    upsert_template("Footer v2", "footer", build_footer(), site_wide, args.dry_run)
     if not args.dry_run:
+        # v1 header/footer stay saved for rollback but no longer display anywhere.
+        for tid in V1_TEMPLATES:
+            api("PUT", f"/elementor/v1/site-editor/templates-conditions/{tid}", json={"conditions": []})
+        api("POST", "/wp/v2/settings", json={"show_on_front": "page", "page_on_front": pages["home"]})
+        print(f"front page -> {pages['home']}")
         flush()
         (OUT / "pages.json").write_text(json.dumps(pages, indent=1))
 

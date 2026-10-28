@@ -144,20 +144,21 @@ PAGES = {
         "title": "About Halo",
         "num": "05",
         "name": "About Halo",
-        "h1": f"Built by people who’ve run dealerships. {ph('client headline')}",
-        "lead": f"{ph('One or two sentences: why Halo exists and who it’s for.')}",
+        "h1": "Built by Dealers. For Dealers.",
+        "lead": "Halo was born from firsthand experience with the operational challenges of running dealerships. We built it to give dealer principals, GMs, and executive teams greater visibility, faster decisions, and more control over profitability.",
         "story": {
-            "quote": f"<p>{ph('Founder quote, one line, in their own words')}</p>",
-            "body": (f"<p>{ph('Paragraph 1: the problem the founders lived inside a dealer group.')}</p>"
-                     f"<p>{ph('Paragraph 2: what they tried first, and why it didn’t work.')}</p>"
-                     f"<p>{ph('Paragraph 3: what Halo does differently, and who it’s built for.')}</p>"),
-            "people_html": (
-                '<div class="hv2-people">' + "".join(
-                    '<div class="hv2-person"><div class="photo">Headshot</div>'
-                    f'<h3>{ph("Name")}</h3><p class="role">{ph("Title")}</p>'
-                    f'<p>{ph("One line of relevant automotive experience.")}</p></div>'
-                    for _ in range(3)) + '</div>'
-            ),
+            "quote": "<p>“We built Halo because we lived that tension. We saw how information lag quietly drains profitability. We saw how fragmentation forces reactive leadership. And we believed there was a better operating standard.”</p>",
+            "body": ("<p>We know what it’s like to run a dealership across 10 to 30 different platforms. Disconnected systems. Departmental silos. Endless reporting. By the time problems reach leadership, the damage is often done. Aging inventory ties up capital. Marketing dollars go to waste. Sales opportunities disappear. Fragmentation quietly erodes profitability.</p>"
+                     "<p>Like most dealers, we relied on more platforms, more dashboards, manual reports, and additional staffing to manage growing complexity. But more technology didn’t mean better visibility. More reporting didn’t mean faster decisions. The result was fragmented operations, rising costs, slower execution, and increasing pressure on margins. We knew there had to be a better way.</p>"
+                     "<p>That’s why we built Halo. One command center connecting dealership data across Inventory, Sales, Service, Marketing, Retention, and Executive View. Halo continuously identifies risks, prioritizes opportunities, and tells your team what changed, why it matters, and what to do next. Less time chasing reports. More time running a profitable business.</p>"),
+            "people_title": "Leadership",
+            "people": [
+                # (name, title, experience or "" until verified)
+                ("Trace Przybylowicz", "Managing Partner", ""),
+                ("Joe Castle", "Managing Partner", "Founder and CEO of Castle Automotive Group, with extensive automotive retail leadership experience."),
+                ("David Ortiz", "Managing Partner", ""),
+                ("Phillip Rather", "Managing Partner", ""),
+            ],
         },
     },
     "faqs": {

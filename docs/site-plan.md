@@ -66,8 +66,16 @@ The brief caps scope, so "human, not AI-generated" comes from execution, not add
 - "Invite only" = sales positioning (select dealer groups), reflected in copy. All v2 pages are public (no password).
 - About, Halo Effect example, Security claims: client fills via `docs/client-prompts.md`.
 
+## Launch (2026-10-28)
+
+- v2 Home (page 1419, slug `home`) is the WordPress front page.
+- Header v2 + Footer v2 apply site-wide (Home excluded from the template header; it renders its own menu bar under the film).
+- v1 header (30) / footer (77) kept but unassigned. Old homepage (10), Redesign Homepage (762), Sample Page (2) set to draft.
+- Rollback: set front page back to 10, re-assign 30/77 to Entire Site, re-publish 10.
+
 ## Open items
 
-1. The film shows real-looking customer names/phones on the Service screen (~0:40). Recommend blurring that shot before launch.
-2. Terms of Use page does not exist; Privacy Policy is still a draft (footer links point to both).
-3. Launch steps: set Home (v2) as front page, swap header/footer conditions to entire site, remove passwords, retire old pages.
+1. Footer links to Privacy Policy (page 3, still draft → 404) and Terms of Use (no page yet).
+2. About: verified one-line experience for Trace Przybylowicz, David Ortiz, Phillip Rather; headshots for all four.
+3. The Halo Effect: real pilot example (Prompt 2). Security: claim verification (Prompt 3).
+4. Original unblurred `Halo-4.mp4` (media 1162) is still in the Media Library at a public URL.
