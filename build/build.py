@@ -22,8 +22,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "build" / "out"
 CA = "/root/.ccr/ca-bundle.crt"
 PASSWORD = os.environ.get("HALO_PREVIEW_PASSWORD", "HaloPreview27")
-# Pages open to the public; everything else stays behind PASSWORD until content is final.
-PUBLIC = {"home-v2", "waitlist"}
+# All v2 pages are public. Add slugs to PRIVATE to put a page back behind PASSWORD.
+PRIVATE = set()
 CSS_START = "/* ==== HALO-V2 START ==== */"
 CSS_END = "/* ==== HALO-V2 END ==== */"
 
@@ -316,7 +316,7 @@ def upsert_page(slug, title, data, dry, page_settings=None):
         "title": title,
         "slug": slug,
         "status": "publish",
-        "password": "" if slug in PUBLIC else PASSWORD,
+        "password": PASSWORD if slug in PRIVATE else "",
         "meta": {
             **ASTRA_META,
             "_elementor_edit_mode": "builder",
