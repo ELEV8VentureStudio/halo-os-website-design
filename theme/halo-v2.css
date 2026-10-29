@@ -816,3 +816,6 @@ body:has(.hv2) #ast-scroll-top { background: #181b1e; color: #eceae4; border: 1p
 @media (max-width: 767px) {
   .hv2-works .grp { grid-template-columns: 1fr; gap: 8px; }
 }
+/* Leadership: five partners in one row on wide screens */
+@media (min-width: 1200px) { .hv2-people { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+@media (min-width: 768px) and (max-width: 1199px) { .hv2-people { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
