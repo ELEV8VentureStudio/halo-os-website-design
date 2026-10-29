@@ -166,10 +166,10 @@ PAGES = {
             "people_title": "Leadership",
             "people": [
                 # (name, title, experience or "" until verified)
-                ("Trace Przybylowicz", "Managing Partner", ""),
                 ("Joe Castle", "Managing Partner", "Founder and CEO of Castle Automotive Group, with extensive automotive retail leadership experience."),
                 ("David Ortiz", "Managing Partner",
                  "30+ year automotive operator, entrepreneur, and builder. He leads sales and marketing across 18 Castle Automotive Group rooftops and has founded ventures spanning dealership marketing, analytics, and AI, bringing the operator’s view and the builder’s toolkit to Halo."),
+                ("Trace Przybylowicz", "Managing Partner", ""),
                 ("Phillip Rather", "Managing Partner", ""),
                 ("Alexandra Castle", "Managing Partner", ""),
             ],
