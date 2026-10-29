@@ -151,6 +151,13 @@ def rows(items, intro=None):
 # --------------------------------------------------------------------------
 # Pages
 # --------------------------------------------------------------------------
+def works_with_html(title, groups):
+    cols = "".join(
+        f'<div class="grp"><p class="k">{name}</p><ul>' + "".join(f"<li>{n}</li>" for n in names) + "</ul></div>"
+        for name, names in groups)
+    return f'<div class="hv2-works"><p class="t">{title}</p><div class="cols">{cols}</div></div>'
+
+
 def build_home(menu_slug):
     c = content.HOME
     _, src = MEDIA["film"]
@@ -176,11 +183,11 @@ def build_home(menu_slug):
         con("hv2 hv2-section hv2-stage-sec", stage, inner=False),
         header_bar(menu_slug, "hv2-header--inpage"),
         section("hv2-hero",
-                label("", c["label"]),
-                heading(c["h1"], "h1", "hv2-h1"),
-                con("hv2-hero-foot",
-                    text(f"<p>{c['tagline']}</p>", "hv2-tagline"),
-                    con("hv2-btn-row", button(c["primary"], url("waitlist"), "hv2-btn")))),
+                con("hv2-hero-main",
+                    label("", c["label"]),
+                    heading(c["h1"], "h1", "hv2-h1"),
+                    con("hv2-hero-foot", text(f"<p>{c['tagline']}</p>", "hv2-tagline"))),
+                html(works_with_html(c["works_with_label"], c["works_with"]))),
     ]
 
 

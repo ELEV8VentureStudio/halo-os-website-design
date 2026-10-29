@@ -26,6 +26,13 @@ HOME = {
     "h1": "Total Command of Your Dealership.",
     "tagline": "Your Dealership. <em>Your Data.</em> Powered by AI.",
     "primary": "Join the Wait List",
+    # Typeset wordmarks until official logo files are supplied (brand use to be confirmed).
+    "works_with_label": "Works with the platforms you already run",
+    "works_with": [
+        ("AI & cloud", ["Google Cloud", "Vertex AI", "Gemini", "OpenAI", "Anthropic"]),
+        ("Dealer systems", ["CDK Global", "Tekion", "VinSolutions", "vAuto", "DealerVault"]),
+        ("Marketing", ["Google Ads", "Meta", "Microsoft Bing"]),
+    ],
 }
 
 CTA_LABEL = "Join the Wait List"
