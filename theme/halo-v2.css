@@ -835,3 +835,6 @@ body:has(.hv2) #ast-scroll-top { background: #181b1e; color: #eceae4; border: 1p
   font-family: var(--f-body); font-size: 15px; line-height: 1.5; color: var(--paper-dim); cursor: pointer;
 }
 .hv2 .hv2-form .elementor-field-group-updates { margin-bottom: 26px; }
+/* Leadership: medium 120px headshots */
+.hv2-person .mono { width: 120px; height: 120px; font-size: 22px; margin-bottom: 22px; }
+@media (max-width: 480px) { .hv2-person .mono { width: 104px; height: 104px; } }
