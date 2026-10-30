@@ -156,11 +156,13 @@ PAGES = {
         "title": "About Halo",
         "num": "05",
         "name": "About Halo",
-        "h1": "Built by Dealers. For Dealers.",
-        "lead": "Halo was born from firsthand experience with the operational challenges of running dealerships. We built it to give dealer principals, GMs, and executive teams greater visibility, faster decisions, and more control over profitability.",
+        "h1": "Dealer DNA. Silicon Valley Ingenuity.",
+        "lead": "Halo was founded at the intersection of two worlds: the people who run dealerships and the people who helped shape the technology transforming automotive retail.",
         "story": {
             "quote": "<p>“We built Halo because we lived that tension. We saw how information lag quietly drains profitability. We saw how fragmentation forces reactive leadership. And we believed there was a better operating standard.”</p>",
-            "body": ("<p>We know what it’s like to run a dealership across 10 to 30 different platforms. Disconnected systems. Departmental silos. Endless reporting. By the time problems reach leadership, the damage is often done. Aging inventory ties up capital. Marketing dollars go to waste. Sales opportunities disappear. Fragmentation quietly erodes profitability.</p>"
+            "body": ("<p>Our founding team combines decades of dealership ownership, operations, and revenue leadership with deep experience in technology, advertising, and digital transformation, including 16 years building Meta’s retail automotive business.</p>"
+                     "<p>We’ve seen the challenges from both sides. We understand the pressure to protect margins, move inventory, grow revenue, and manage increasingly complex operations. And we know what technology can accomplish when it’s built around the realities of running a dealership.</p>"
+                     "<p>We know what it’s like to run a dealership across 10 to 30 different platforms. Disconnected systems. Departmental silos. Endless reporting. By the time problems reach leadership, the damage is often done. Aging inventory ties up capital. Marketing dollars go to waste. Sales opportunities disappear. Fragmentation quietly erodes profitability.</p>"
                      "<p>Like most dealers, we relied on more platforms, more dashboards, manual reports, and additional staffing to manage growing complexity. But more technology didn’t mean better visibility. More reporting didn’t mean faster decisions. The result was fragmented operations, rising costs, slower execution, and increasing pressure on margins. We knew there had to be a better way.</p>"
                      "<p>That’s why we built Halo. One command center connecting dealership data across Inventory, Sales, Service, Marketing, Retention, and Executive View. Halo continuously identifies risks, prioritizes opportunities, and tells your team what changed, why it matters, and what to do next. Less time chasing reports. More time running a profitable business.</p>"),
             "people_title": "Leadership",
