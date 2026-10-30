@@ -61,7 +61,7 @@ The brief caps scope, so "human, not AI-generated" comes from execution, not add
 ## Decisions (2026-10-28)
 
 - Video: existing film (re-encoded 107 MB → 10.9 MB, 1080p). Poster = Marketing Campaigns frame.
-- CTA: "Join the Wait List" site-wide → /waitlist/ (form emails david@drivehalo.ai).
+- CTA: "Join the Wait List" site-wide → /waitlist/ (form emails hello@drivehalo.ai).
 - Home: film autoplays muted full-width at the top (Sound on button restarts it with audio); menu bar sits beneath it and sticks on scroll.
 - "Invite only" = sales positioning (select dealer groups), reflected in copy. All v2 pages are public (no password).
 - About, Halo Effect example, Security claims: client fills via `docs/client-prompts.md`.

@@ -249,7 +249,7 @@ def build_demo():
         button_text=c["button"],
         button_width="100",
         submit_actions=["email"],
-        email_to="david@drivehalo.ai",
+        email_to="hello@drivehalo.ai",
         email_subject='Halo wait list: [field id="dealership"] ([field id="rooftops"] rooftops)',
         email_content="[all-fields]",
         email_from="email@drivehalo.ai",
