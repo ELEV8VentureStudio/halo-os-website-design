@@ -22,6 +22,14 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "build" / "out"
 CA = "/root/.ccr/ca-bundle.crt"
 PASSWORD = os.environ.get("HALO_PREVIEW_PASSWORD", "HaloPreview27")
+# Wait list submissions go to everyone here (Elementor takes a comma-separated list).
+FORM_RECIPIENTS = [
+    "hello@drivehalo.ai",
+    "trace@weareelev8.com",  # requested as "wereelev8.com"; assumed typo for weareelev8.com
+    "phillip@musicalapp.com",
+    "ac@weareelev8.com",
+    "joe@joecastle.com",
+]
 V1_TEMPLATES = (30, 77)  # original Elementor header/footer
 # All v2 pages are public. Add slugs to PRIVATE to put a page back behind PASSWORD.
 PRIVATE = set()
@@ -232,7 +240,7 @@ def build_demo():
     c = content.DEMO
     fields = [
         {"custom_id": "name", "field_label": "Your name", "placeholder": "First and last name", "required": "true", "width": "100"},
-        {"custom_id": "dealership", "field_label": "Dealership or group", "placeholder": "e.g. Castle Automotive Group", "required": "true", "width": "100"},
+        {"custom_id": "dealership", "field_label": "Dealership or group", "placeholder": "Hometown Automotive Group", "required": "true", "width": "100"},
         {"custom_id": "rooftops", "field_type": "select", "field_label": "Rooftops", "field_options": "Select…|\n1\n2–5\n6–15\n16–30\n30+", "required": "true", "width": "50"},
         {"custom_id": "role", "field_label": "Your role", "placeholder": "e.g. Dealer Principal, GM", "width": "50"},
         {"custom_id": "email", "field_type": "email", "field_label": "Work email", "placeholder": "you@dealership.com", "required": "true", "width": "50"},
@@ -249,7 +257,7 @@ def build_demo():
         button_text=c["button"],
         button_width="100",
         submit_actions=["email"],
-        email_to="hello@drivehalo.ai",
+        email_to=", ".join(FORM_RECIPIENTS),
         email_subject='Halo wait list: [field id="dealership"] ([field id="rooftops"] rooftops)',
         email_content="[all-fields]",
         email_from="email@drivehalo.ai",
