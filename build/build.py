@@ -25,7 +25,7 @@ PASSWORD = os.environ.get("HALO_PREVIEW_PASSWORD", "HaloPreview27")
 # Wait list submissions go to everyone here (Elementor takes a comma-separated list).
 FORM_RECIPIENTS = [
     "hello@drivehalo.ai",
-    "trace@weareelev8.com",  # requested as "wereelev8.com"; assumed typo for weareelev8.com
+    "trace@weareelev8.com",
     "phillip@musicalapp.com",
     "ac@weareelev8.com",
     "joe@joecastle.com",
@@ -201,9 +201,11 @@ def build_home(menu_slug):
 
 def people_html(people):
     cards = []
-    for name, title, bio in people:
+    for name, title, bio, *photo in people:
         initials = "".join(w[0] for w in name.split()[:2]).upper()
-        cards.append(f'<div class="hv2-person"><div class="mono" aria-hidden="true">{initials}</div>'
+        face = (f'<img class="mono" src="{photo[0]}" alt="{name}" width="72" height="72" loading="lazy">' if photo
+                else f'<div class="mono" aria-hidden="true">{initials}</div>')
+        cards.append(f'<div class="hv2-person">{face}'
                      f'<h3>{name}</h3><p class="role">{title}</p>' + (f"<p>{bio}</p>" if bio else "") + "</div>")
     return f'<div class="hv2-people">{"".join(cards)}</div>'
 
@@ -245,6 +247,9 @@ def build_demo():
         {"custom_id": "role", "field_label": "Your role", "placeholder": "e.g. Dealer Principal, GM", "width": "50"},
         {"custom_id": "email", "field_type": "email", "field_label": "Work email", "placeholder": "you@dealership.com", "required": "true", "width": "50"},
         {"custom_id": "phone", "field_type": "tel", "field_label": "Phone", "placeholder": "(555) 555-5555", "width": "50"},
+        # Optional, unticked marketing opt-in; shows as "Updates" in the submission email.
+        {"custom_id": "updates", "field_type": "checkbox", "field_label": "Updates",
+         "field_options": "Send me occasional updates about Halo. Unsubscribe anytime.", "width": "100"},
     ]
     for f in fields:
         f["_id"] = _id()

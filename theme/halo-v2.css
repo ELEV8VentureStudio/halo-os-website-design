@@ -819,3 +819,19 @@ body:has(.hv2) #ast-scroll-top { background: #181b1e; color: #eceae4; border: 1p
 /* Leadership: five partners in one row on wide screens */
 @media (min-width: 1200px) { .hv2-people { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
 @media (min-width: 768px) and (max-width: 1199px) { .hv2-people { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* Leadership: 72px avatar (headshot or initials) */
+.hv2-person .mono { width: 72px; height: 72px; font-size: 17px; }
+.hv2-person img.mono { display: block; object-fit: cover; padding: 0; border: 1px solid var(--rule-strong); filter: grayscale(0.15) contrast(1.02); }
+
+/* Wait list: opt-in checkbox (label hidden; the option text is the label) */
+.hv2 .hv2-form .elementor-field-group-updates > .elementor-field-label { display: none; }
+.hv2 .hv2-form .elementor-field-group-updates .elementor-field-subgroup { margin-top: 4px; }
+.hv2 .hv2-form .elementor-field-group-updates .elementor-field-option { display: flex; align-items: flex-start; gap: 10px; }
+.hv2 .hv2-form .elementor-field-group-updates input[type="checkbox"] {
+  width: 18px; height: 18px; margin: 2px 0 0; flex: 0 0 18px; accent-color: var(--signal); cursor: pointer;
+}
+.hv2 .hv2-form .elementor-field-group-updates .elementor-field-option label {
+  font-family: var(--f-body); font-size: 15px; line-height: 1.5; color: var(--paper-dim); cursor: pointer;
+}
+.hv2 .hv2-form .elementor-field-group-updates { margin-bottom: 26px; }

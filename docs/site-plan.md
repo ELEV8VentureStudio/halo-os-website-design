@@ -77,6 +77,6 @@ The brief caps scope, so "human, not AI-generated" comes from execution, not add
 
 1. Legal review: `docs/legal.md` (Privacy Policy + Terms). Needs legal entity name, mailing address, governing-law state, dedicated privacy inbox.
 2. Security page: "activity log" claim depends on the admin log view shipping (client note).
-3. About: verified one-line experience for Trace Przybylowicz, Phillip Rather and Alexandra Castle; headshots for all five.
+3. About: verified one-line experience for Trace Przybylowicz and Alexandra Castle; headshots for Joe, David, Trace, Alexandra (Phillip done).
 4. The Halo Effect: real pilot example (Prompt 2).
 5. Original unblurred `Halo-4.mp4` (media 1162) is still in the Media Library at a public URL.

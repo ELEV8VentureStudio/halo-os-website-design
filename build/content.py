@@ -165,12 +165,14 @@ PAGES = {
                      "<p>That’s why we built Halo. One command center connecting dealership data across Inventory, Sales, Service, Marketing, Retention, and Executive View. Halo continuously identifies risks, prioritizes opportunities, and tells your team what changed, why it matters, and what to do next. Less time chasing reports. More time running a profitable business.</p>"),
             "people_title": "Leadership",
             "people": [
-                # (name, title, experience or "" until verified)
+                # (name, title, experience or "" until verified[, headshot URL])
                 ("Joe Castle", "Managing Partner", "Founder and CEO of Castle Automotive Group, with extensive automotive retail leadership experience."),
                 ("David Ortiz", "Managing Partner",
                  "30+ year automotive operator, entrepreneur, and builder. He leads sales and marketing across 18 Castle Automotive Group rooftops and has founded ventures spanning dealership marketing, analytics, and AI, bringing the operator’s view and the builder’s toolkit to Halo."),
                 ("Trace Przybylowicz", "Managing Partner", ""),
-                ("Phillip Rather", "Managing Partner", ""),
+                ("Phillip Rather", "Managing Partner",
+                 "Founder of Meta’s Retail Auto and Local teams ($1B+). Serial entrepreneur, investor and product leader. CEO of Guild.",
+                 f"{SITE}/wp-content/uploads/2026/10/phillip-rather.jpg"),
                 ("Alexandra Castle", "Managing Partner", ""),
             ],
         },
