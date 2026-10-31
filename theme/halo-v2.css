@@ -947,3 +947,24 @@ body .elementor :is(h1, h2, h3, h4, h5, h6) {
 .hv2-header .hv2-nav .elementor-nav-menu--dropdown .elementor-item { font-size: 20px; letter-spacing: -0.01em; }
 /* Hero H1: room for "of Your Dealership." (9.7em) but not "Total Command of Your" (12.1em) */
 .hv2-hero .hv2-h1 .elementor-heading-title { max-width: 10.4em; }
+
+/* Footer: AutomotiveMCP Founding Member badge ("in use, vendor site" pattern; light seal on dark) */
+.hv2-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+  padding: 14px 20px 14px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: var(--ink-2);
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+.hv2-badge:hover { border-color: var(--rule-strong); }
+.hv2-badge img { width: 72px; height: 72px; min-width: 72px; display: block; }
+.hv2-badge > span { display: flex; flex-direction: column; gap: 4px; }
+.hv2-badge strong { font-family: var(--f-display); font-weight: 700; font-size: 17px; line-height: 1.2; color: var(--paper); }
+.hv2-badge > span > span { font-family: var(--f-body); font-size: 15px; line-height: 1.3; color: var(--paper-dim); }
+/* Footer column labels stay mono (beat the site-wide heading font rule) */
+.hv2 .hv2-foot-cols h4 { font-family: var(--f-mono); }

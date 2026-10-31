@@ -230,6 +230,15 @@ DEMO = {
 
 FOOTER = {
     "tagline": "Your Dealership. Your Data. Powered by AI.",
+    # AutomotiveMCP "in use, vendor site" badge. Brand rules: light seal on dark backgrounds,
+    # 72px or larger, never recolor or crop. Asset is hotlinked from the issuer (WordPress blocks SVG uploads).
+    "badge": {
+        "seal": "https://automotivemcp.ai/brand-assets/founding-member-light.svg",
+        "href": "https://automotivemcp.ai",
+        "title": "Founding Member",
+        "sub": "AutomotiveMCP, 2026",
+        "alt": "AutomotiveMCP Founding Member seal",
+    },
     "cols": [
         {"title": "Product", "links": [("Platform", f"{SITE}/platform/"), ("The Halo Effect", f"{SITE}/the-halo-effect/"),
                                         ("How It Works", f"{SITE}/how-it-works/"), ("Security", f"{SITE}/security/")]},

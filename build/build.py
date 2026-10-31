@@ -312,6 +312,12 @@ def build_header(menu_slug):
     return [header_bar(menu_slug)]
 
 
+def badge_html(b):
+    return (f'<a class="hv2-badge" href="{b["href"]}" target="_blank" rel="noopener">'
+            f'<img src="{b["seal"]}" alt="{b["alt"]}" width="72" height="72" loading="lazy" decoding="async">'
+            f'<span><strong>{b["title"]}</strong><span>{b["sub"]}</span></span></a>')
+
+
 def build_footer():
     c = content.FOOTER
     cols = "".join(
@@ -322,7 +328,7 @@ def build_footer():
     logo["settings"]["align"] = "left"
     return [con("hv2 hv2-footer",
                 con("hv2-wrap",
-                    con("hv2-foot-brand", logo, text(f"<p>{c['tagline']}</p>", "hv2-body")),
+                    con("hv2-foot-brand", logo, text(f"<p>{c['tagline']}</p>", "hv2-body"), html(badge_html(c["badge"]))),
                     html(f'<nav class="hv2-foot-cols" aria-label="Footer">{cols}</nav>'),
                     con("hv2-foot-base",
                         text(f"<p>{c['legal']}</p>", "hv2-label"),
