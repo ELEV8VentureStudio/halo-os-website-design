@@ -171,7 +171,7 @@ PAGES = {
                 ("Joe Castle", "Co-Founder", "Serial entrepreneur and investor with extensive automotive retail leadership experience. As Founder & CEO of Castle Automotive Group, he brings deep operational expertise to driving technology innovation across the industry.",
                  f"{SITE}/wp-content/uploads/2026/10/joe-castle.jpg"),
                 ("David Ortiz", "Co-Founder",
-                 "30+ year automotive operator, entrepreneur, and builder. He leads sales and marketing across 18 Castle Automotive Group rooftops and has founded ventures spanning dealership marketing, analytics, and AI, bringing the operator’s view and the builder’s toolkit to Halo.",
+                 "30-year automotive operator turned company builder. Co-founder of ELEV8 Venture Studio and founder of ventures spanning dealership marketing, analytics, and AI. He tests every idea on real rooftops, bringing the operator’s view and the builder’s toolkit to Halo.",
                  f"{SITE}/wp-content/uploads/2026/10/david-ortiz.jpg"),
                 ("Trace Przybylowicz", "Co-Founder",
                  "Former Head of Retail Automotive Business Development at Meta and founder of its $1B+ Retail Auto and Local teams. Trace helped reshape automotive marketing through strategic dealer and agency partnerships, advancing digital advertising innovation, performance, and growth at scale.",
