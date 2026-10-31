@@ -265,6 +265,9 @@ def build_demo():
         email_to=", ".join(FORM_RECIPIENTS),
         email_subject='Halo wait list: [field id="dealership"] ([field id="rooftops"] rooftops)',
         email_content="[all-fields]",
+        # Plain text, no "Powered by Elementor" credit or visitor UA/IP: fewer spam signals, less personal data.
+        email_content_type="plain",
+        form_metadata=["date", "time", "page_url"],
         email_from="email@drivehalo.ai",
         email_from_name="Halo",
         email_reply_to='[field id="email"]',
