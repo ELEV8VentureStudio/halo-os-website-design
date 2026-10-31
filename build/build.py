@@ -441,6 +441,26 @@ def sync_kit_typography(dry):
     print("kit typography synced")
 
 
+def sync_seo(pages, dry):
+    """Yoast SEO titles/descriptions via its bulk-editor API; share image via featured image."""
+    if dry:
+        return
+    search, social = [], []
+    for slug, (title, desc) in content.SEO.items():
+        pid = pages.get(slug)
+        if not pid:
+            continue
+        item = {"id": pid, "meta_description": desc}
+        if title:
+            item["seo_title"] = title
+        search.append(item)
+        social.append({"id": pid, "social_title": title or "%%title%% %%sep%% %%sitename%%", "social_description": desc})
+        api("POST", f"/wp/v2/pages/{pid}", json={"featured_media": content.OG_IMAGE_ID})
+    api("POST", "/yoast/v1/bulk_editor/update_search", json={"items": search})
+    api("POST", "/yoast/v1/bulk_editor/update_social", json={"items": social})
+    print(f"seo synced for {len(search)} pages")
+
+
 def flush():
     api("DELETE", "/elementor/v1/cache")
     s.put(API + "/siteground-optimizer/v1/purge-cache", timeout=60)
@@ -482,6 +502,7 @@ def main():
                     site_wide + [{"type": "exclude", "name": "singular", "sub_name": "page",
                                   "sub_id": str(pages["home"])}] if pages["home"] else site_wide, args.dry_run)
     upsert_template("Footer v2", "footer", build_footer(), site_wide, args.dry_run)
+    sync_seo(pages, args.dry_run)
     if not args.dry_run:
         # v1 header/footer stay saved for rollback but no longer display anywhere.
         for tid in V1_TEMPLATES:

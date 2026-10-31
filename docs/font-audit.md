@@ -24,6 +24,6 @@
 - Home title "Halo – Dealership Command Center" (site tagline). About page title "About". Alt text set on the logo and four product screenshots (media library, applies site-wide).
 
 ## Still open
-- **Astra Customizer** still requests a tiny Google Fonts stylesheet naming Syne/DM Sans (no font files download because nothing uses them). Fix in wp-admin: Appearance → Customize → Global → Typography → set Body and Headings font family to **Default System Font** (or Inherit) → Publish.
-- **Meta descriptions + Open Graph:** see `docs/seo-head.md`.
+- **Astra Customizer** still requests a tiny Google Fonts stylesheet naming Syne/DM Sans (no font files download). Fix in wp-admin: Appearance → Customize → Global → Typography → Body and Headings font family = **Inherit** → Publish.
+- Meta descriptions + Open Graph: done with Yoast SEO (see `docs/seo-head.md`).
 - QA sheets: `docs/qa/montserrat/*.jpg`, descender close-ups `docs/qa/montserrat/descenders-closeup.jpg`.

@@ -335,3 +335,23 @@ PAGES["terms"] = {
     "lead": "The rules for using drivehalo.ai. Use of the Halo platform itself is covered by your organization’s agreement with Halo.",
     "cta": False, "legal_html": legal_html(TERMS_SECTIONS),
 }
+
+
+# --------------------------------------------------------------------------
+# SEO (Yoast SEO). title=None keeps Yoast's "%%title%% - Halo" template.
+# og:description falls back to the meta description; og:image = featured image.
+# --------------------------------------------------------------------------
+OG_IMAGE_ID = 1635  # halo-og.jpg, 1200x630
+SEO = {
+    "home": ("Halo | Dealership Command Center",
+             "Halo is the AI command center for dealer groups: one view of inventory, sales, service, marketing and retention across every rooftop. By invitation."),
+    "platform": (None, "Six profit centers, one read on all of them. Halo watches inventory, sales, service, marketing, retention and executive KPIs across every rooftop."),
+    "the-halo-effect": (None, "How Halo catches a problem, prices its impact, routes it to the manager who owns the fix and tracks the outcome, in every dealership profit center."),
+    "how-it-works": (None, "Connect. Identify. Act. Halo connects the systems your stores already run, flags what matters at every rooftop and tracks what happens next."),
+    "security": (None, "Your data. Your control. Every dealer group gets a private environment, role-based access, encryption, and AI that isn’t trained on your data."),
+    "about": (None, "Dealer DNA. Silicon Valley ingenuity. Meet Halo’s founders, pairing decades of dealership leadership with deep technology and advertising experience."),
+    "faqs": (None, "Straight answers about Halo: what it replaces, how setup works, which systems it connects to, starting with one store, and how your data is handled."),
+    "waitlist": (None, "Halo onboards a limited number of dealer groups by invitation. Join the wait list to see Halo on your own stores’ numbers."),
+    "privacy-policy": (None, "How Halo handles information on our website and in our platform, and the choices you have."),
+    "terms": (None, "The terms for using drivehalo.ai, the Halo website."),
+}
