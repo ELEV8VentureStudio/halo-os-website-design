@@ -289,11 +289,8 @@ def build_demo():
 # --------------------------------------------------------------------------
 # Header / footer
 # --------------------------------------------------------------------------
-FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
-         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
-         'family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600'
-         '&family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@600;700&display=swap">')
+# Fonts are self-hosted (@font-face in theme/halo-v2.css); preloads live in the head snippet.
+FONTS = ""
 
 
 def header_bar(menu_slug, extra=""):
@@ -305,7 +302,6 @@ def header_bar(menu_slug, extra=""):
                  text_align="aside")
     return con(f"hv2 hv2-header {extra}".strip(),
                con("hv2-wrap",
-                   html(FONTS),
                    logo,
                    nav,
                    con("hv2-head-cta", button(content.CTA_LABEL, url("waitlist"), "hv2-btn"))),
@@ -415,6 +411,36 @@ def sync_css(dry):
     print("kit CSS synced")
 
 
+KIT_TYPOGRAPHY = {
+    # Elementor Site Settings > Global Fonts. halo-v2.css reads these through --e-global-typography-* vars.
+    "primary": ("Montserrat", "700"),    # headings / display
+    "secondary": ("Montserrat", "600"),
+    "text": ("Montserrat", "400"),       # body, nav, buttons
+    "accent": ("Montserrat", "500"),
+}
+KIT_LABEL = {"_id": "hv2label", "title": "Label (mono)", "typography_typography": "custom",
+             "typography_font_family": "IBM Plex Mono", "typography_font_weight": "400"}
+
+
+def sync_kit_typography(dry):
+    if dry:
+        return
+    kit = api("GET", "/wp/v2/elementor_library/6?context=edit")
+    st = kit["meta"]["_elementor_page_settings"]
+    for item in st.get("system_typography", []):
+        if item.get("_id") in KIT_TYPOGRAPHY:
+            item["typography_typography"] = "custom"
+            item["typography_font_family"], item["typography_font_weight"] = KIT_TYPOGRAPHY[item["_id"]]
+    custom = [c for c in st.get("custom_typography", []) or [] if c.get("_id") != KIT_LABEL["_id"]]
+    st["custom_typography"] = custom + [KIT_LABEL]
+    st["body_typography_typography"] = "custom"
+    st["body_typography_font_family"] = "Montserrat"
+    # Legacy v1 helper classes in the kit CSS still named Syne; point them at the kit font too.
+    st["custom_css"] = st.get("custom_css", "").replace("'Syne', sans-serif", "'Montserrat', sans-serif")
+    api("POST", "/wp/v2/elementor_library/6", json={"meta": {"_elementor_page_settings": st}})
+    print("kit typography synced")
+
+
 def flush():
     api("DELETE", "/elementor/v1/cache")
     s.put(API + "/siteground-optimizer/v1/purge-cache", timeout=60)
@@ -428,6 +454,7 @@ def main():
     args = ap.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
 
+    sync_kit_typography(args.dry_run)
     sync_css(args.dry_run)
     if args.css_only:
         flush()

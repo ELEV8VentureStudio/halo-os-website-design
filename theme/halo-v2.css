@@ -4,6 +4,59 @@
    Lives in the Elementor kit custom CSS between the HALO-V2 markers.
    ========================================================================== */
 
+/* --------------------------------------------------------------------------
+   Self-hosted fonts (WordPress Font Library, /wp-content/uploads/fonts/).
+   Montserrat is variable (400–800). IBM Plex Mono 400/500 for labels only.
+   -------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://drivehalo.ai/wp-content/uploads/fonts/ibm-plex-mono-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://drivehalo.ai/wp-content/uploads/fonts/ibm-plex-mono-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('https://drivehalo.ai/wp-content/uploads/fonts/ibm-plex-mono-500-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('https://drivehalo.ai/wp-content/uploads/fonts/ibm-plex-mono-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('https://drivehalo.ai/wp-content/uploads/fonts/montserrat-400-800-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('https://drivehalo.ai/wp-content/uploads/fonts/montserrat-400-800-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 .hv2 {
   --ink: #0b0c0d;
   --ink-2: #111315;
@@ -15,9 +68,10 @@
   --rule-strong: rgba(236, 234, 228, 0.24);
   --signal: #00d2b4;
   --signal-ink: #04201c;
-  --f-display: 'Syne', sans-serif;
-  --f-body: 'DM Sans', sans-serif;
-  --f-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  /* Font families come from Elementor Site Settings > Global Fonts (the kit is the source of truth). */
+  --f-display: var(--e-global-typography-primary-font-family, 'Montserrat'), sans-serif;
+  --f-body: var(--e-global-typography-text-font-family, 'Montserrat'), sans-serif;
+  --f-mono: var(--e-global-typography-hv2label-font-family, 'IBM Plex Mono'), ui-monospace, SFMono-Regular, Menlo, monospace;
   --gutter: clamp(20px, 4vw, 48px);
   color: var(--paper);
   font-family: var(--f-body);
@@ -317,7 +371,6 @@
   border: 1px solid var(--rule);
   border-radius: 6px;
   background: var(--ink-2);
-  overflow: hidden;
 }
 .hv2-case-top {
   display: flex;
@@ -838,3 +891,59 @@ body:has(.hv2) #ast-scroll-top { background: #181b1e; color: #eceae4; border: 1p
 /* Leadership: medium 120px headshots */
 .hv2-person .mono { width: 120px; height: 120px; font-size: 22px; margin-bottom: 22px; }
 @media (max-width: 480px) { .hv2-person .mono { width: 104px; height: 104px; } }
+
+/* ==========================================================================
+   TYPE SYSTEM — Montserrat (brand guidelines). Replaces Syne/DM Sans sizing.
+   Montserrat runs ~12% wider, so display sizes are scaled down to keep the
+   same line breaks; line-height opened up so g/y/p/j descenders never clip.
+   ========================================================================== */
+
+/* Anything outside .hv2 (theme defaults, form messages) follows the kit, not Astra's customizer fonts. */
+html body, html body button, html body input, html body select, html body textarea {
+  font-family: var(--e-global-typography-text-font-family, 'Montserrat'), sans-serif;
+}
+body .elementor :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--e-global-typography-primary-font-family, 'Montserrat'), sans-serif;
+}
+
+.hv2 .hv2-h1 .elementor-heading-title {
+  font-size: clamp(41px, 6.1vw, 89px);
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+}
+.hv2-hero .hv2-h1 .elementor-heading-title { font-size: clamp(43px, 7.7vw, 118px); line-height: 1.05; font-weight: 800; }
+.hv2-demo .hv2-h1 .elementor-heading-title { font-size: clamp(37px, 4.7vw, 67px); }
+.hv2 .hv2-h2 .elementor-heading-title {
+  font-size: clamp(27px, 3.15vw, 46px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+.hv2 .hv2-h3 .elementor-heading-title {
+  font-size: clamp(19.5px, 1.65vw, 23px);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+.hv2-case-steps h3 { font-size: clamp(17px, 1.4vw, 20px); line-height: 1.3; letter-spacing: -0.01em; }
+.hv2-faq summary { font-size: clamp(17px, 1.5vw, 21px); line-height: 1.3; letter-spacing: -0.01em; }
+.hv2-legal h2 { font-size: clamp(18px, 1.6vw, 21px); line-height: 1.3; letter-spacing: -0.01em; }
+.hv2-person h3 { font-size: 18px; line-height: 1.3; }
+.hv2 .hv2-quote, .hv2 .hv2-quote p,
+.hv2-story .hv2-quote, .hv2-story .hv2-quote p { font-size: clamp(18px, 1.6vw, 23px); line-height: 1.38; letter-spacing: -0.01em; }
+
+/* Body copy: 16–17px, 1.6–1.65 */
+.hv2 .hv2-body, .hv2 .hv2-body p,
+.hv2-legal p, .hv2-legal li,
+.hv2-faq .a, .hv2-case-steps p { font-size: 16px; line-height: 1.65; }
+.hv2-person p, .hv2-next li { font-size: 15px; line-height: 1.6; }
+.hv2 .hv2-lead, .hv2 .hv2-lead p { font-size: clamp(16px, 1.25vw, 18.5px); line-height: 1.6; }
+.hv2 .hv2-tagline, .hv2 .hv2-tagline p { font-size: clamp(16px, 1.3vw, 19px); }
+
+/* UI text */
+.hv2-header .hv2-nav .elementor-nav-menu--main .elementor-item { font-size: 14.5px; }
+.hv2 .hv2-btn .elementor-button, .hv2 .hv2-btn-ghost .elementor-button,
+.hv2 .hv2-form .elementor-button[type="submit"] { font-size: 15px; }
+.hv2-header .hv2-btn .elementor-button { font-size: 14px; }
+.hv2-works li { font-size: clamp(15px, 1.15vw, 17.5px); letter-spacing: 0; }
+.hv2-header .hv2-nav .elementor-nav-menu--dropdown .elementor-item { font-size: 20px; letter-spacing: -0.01em; }
+/* Hero H1: room for "of Your Dealership." (9.7em) but not "Total Command of Your" (12.1em) */
+.hv2-hero .hv2-h1 .elementor-heading-title { max-width: 10.4em; }

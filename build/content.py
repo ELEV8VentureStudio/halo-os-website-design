@@ -23,7 +23,7 @@ NAV = [
 
 HOME = {
     "label": "Halo OS — By invitation, for select dealer groups",
-    "h1": "Total Command of Your Dealership.",
+    "h1": "Total Command of&nbsp;Your Dealership.",  # nbsp keeps the break at "Total Command / of Your Dealership."
     "tagline": "Your Dealership. <em>Your Data.</em> Powered by AI.",
     "primary": "Join the Wait List",
     # Typeset wordmarks until official logo files are supplied (brand use to be confirmed).
@@ -153,7 +153,7 @@ PAGES = {
         ],
     },
     "about": {
-        "title": "About Halo",
+        "title": "About",
         "num": "05",
         "name": "About Halo",
         "h1": "Dealer DNA. Silicon Valley Ingenuity.",
