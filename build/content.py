@@ -175,7 +175,7 @@ PAGES = {
                  f"{SITE}/wp-content/uploads/2026/10/david-ortiz.jpg"),
                 ("Trace Przybylowicz", "Co-Founder",
                  "Former Head of Retail Automotive Business Development at Meta and founder of its $1B+ Retail Auto and Local teams. Trace helped reshape automotive marketing through strategic dealer and agency partnerships, advancing digital advertising innovation, performance, and growth at scale.",
-                 f"{SITE}/wp-content/uploads/2026/10/trace-przybylowicz.jpg"),
+                 f"{SITE}/wp-content/uploads/2026/11/trace-przybylowicz-headshot.jpg"),
                 ("Phillip Rather", "Co-Founder",
                  "Founder of Meta’s Retail Auto and Local teams ($1B+). Serial entrepreneur, investor and product leader. CEO of Guild.",
                  f"{SITE}/wp-content/uploads/2026/10/phillip-rather.jpg"),
