@@ -968,3 +968,5 @@ body .elementor :is(h1, h2, h3, h4, h5, h6) {
 .hv2-badge > span > span { font-family: var(--f-body); font-size: 15px; line-height: 1.3; color: var(--paper-dim); }
 /* Footer column labels stay mono (beat the site-wide heading font rule) */
 .hv2 .hv2-foot-cols h4 { font-family: var(--f-mono); }
+/* Teal highlight for key phrases (Halo Effect case card) */
+.hv2 .hl { color: var(--signal); background: rgba(0, 210, 180, 0.08); padding: 0 4px; border-radius: 2px; }

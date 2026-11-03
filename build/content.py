@@ -11,6 +11,11 @@ def ph(s):
     return f'<span class="ph">[{s}]</span>'
 
 
+def hl(s):
+    """Teal highlight for key phrases (same color as placeholders, regular font)."""
+    return f'<span class="hl">{s}</span>'
+
+
 # Order = header nav order = page numbering
 NAV = [
     ("Platform", "platform"),
@@ -78,17 +83,17 @@ PAGES = {
             '<div class="hv2-case-top"><span>Case · Used inventory · Single rooftop</span>'
             '</div>'
             '<ol class="hv2-case-steps">'
-            f'<li><div class="when"><b>01 Detected</b>{ph("Day / time")}</div><div>'
-            f'<h3>{ph("#")} used units crossed 60 days, priced above the local market.</h3>'
+            f'<li><div class="when"><b>01 Detected</b>Nightly scan</div><div>'
+            f'<h3>{hl("Several used units")} crossed 60 days, priced above the local market.</h3>'
             '<p>Halo’s nightly scan flagged them together because they share the same problem: priced like it’s week one, aging like it’s week nine.</p></div></li>'
             f'<li><div class="when"><b>02 Impact</b>Calculated by Halo</div><div>'
-            f'<h3>About {ph("$ per day")} in holding cost, and shrinking gross every week they sit.</h3>'
+            f'<h3>A {hl("daily holding cost")} in dollars, and shrinking gross every week they sit.</h3>'
             '<p>Floorplan, depreciation, and recon already spent, shown as a dollar figure the GM can act on.</p></div></li>'
             f'<li><div class="when"><b>03 Action</b>Sent to Used Car Manager</div><div>'
-            f'<h3>Reprice {ph("#")} units. Move {ph("#")} to a sister store where they turn faster.</h3>'
+            f'<h3>Reprice {hl("the outliers")}. Move {hl("the rest")} to a sister store where they turn faster.</h3>'
             '<p>A short, prioritized list, sent to the person who owns the fix, not a report someone has to go find.</p></div></li>'
             f'<li><div class="when"><b>04 Outcome</b>Tracked by Halo</div><div>'
-            f'<h3>{ph("#")} of {ph("#")} sold within {ph("#")} days. {ph("$")} recovered.</h3>'
+            f'<h3>{hl("Units sold")}, {hl("days to turn")}, and {hl("dollars recovered")}, all tracked.</h3>'
             '<p>Halo follows each unit until it’s sold and records what worked, so the next alert is sharper.</p></div></li>'
             '</ol></div>'
         ),
@@ -174,10 +179,10 @@ PAGES = {
                  "30-year automotive operator turned company builder. Co-founder of ELEV8 Venture Studio and founder of ventures spanning dealership marketing, analytics, and AI. He tests every idea on real rooftops, bringing the operator’s view and the builder’s toolkit to Halo.",
                  f"{SITE}/wp-content/uploads/2026/10/david-ortiz.jpg"),
                 ("Trace Przybylowicz", "Co-Founder",
-                 "Former Head of Retail Automotive Business Development at Meta and founder of its $1B+ Retail Auto and Local teams. Trace helped reshape automotive marketing through strategic dealer and agency partnerships, advancing digital advertising innovation, performance, and growth at scale.",
+                 "Former Head of Retail Automotive Business Development at Meta and co-founder of Meta’s Retail Auto and Local teams ($1B+). Trace helped reshape automotive marketing through strategic dealer and agency partnerships, advancing digital advertising innovation, performance, and growth at scale.",
                  f"{SITE}/wp-content/uploads/2026/11/trace-przybylowicz-portrait.jpg"),
                 ("Phillip Rather", "Co-Founder",
-                 "Founder of Meta’s Retail Auto and Local teams ($1B+). Serial entrepreneur, investor and product leader. CEO of Guild.",
+                 "Co-founder of Meta’s Retail Auto and Local teams ($1B+). Serial entrepreneur, investor and product leader. CEO of Guild.",
                  f"{SITE}/wp-content/uploads/2026/10/phillip-rather.jpg"),
                 ("Alexandra Castle", "Co-Founder", "",
                  f"{SITE}/wp-content/uploads/2026/10/alexandra-castle.jpg"),
