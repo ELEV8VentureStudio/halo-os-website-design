@@ -170,6 +170,8 @@ PAGES = {
                      "<p>We know what it’s like to run a dealership across 10 to 30 different platforms. Disconnected systems. Departmental silos. Endless reporting. By the time problems reach leadership, the damage is often done. Aging inventory ties up capital. Marketing dollars go to waste. Sales opportunities disappear. Fragmentation quietly erodes profitability.</p>"
                      "<p>Like most dealers, we relied on more platforms, more dashboards, manual reports, and additional staffing to manage growing complexity. But more technology didn’t mean better visibility. More reporting didn’t mean faster decisions. The result was fragmented operations, rising costs, slower execution, and increasing pressure on margins. We knew there had to be a better way.</p>"
                      "<p>That’s why we built Halo. One command center connecting dealership data across Inventory, Sales, Service, Marketing, Retention, and Executive View. Halo continuously identifies risks, prioritizes opportunities, and tells your team what changed, why it matters, and what to do next. Less time chasing reports. More time running a profitable business.</p>"),
+            # Leadership section hidden by the partners (Nov 2026). Set True to bring it back.
+            "show_people": False,
             "people_title": "Leadership",
             "people": [
                 # (name, title, experience or "" until verified[, headshot URL])
@@ -363,7 +365,7 @@ SEO = {
     "the-halo-effect": (None, "How Halo catches a problem, prices its impact, routes it to the manager who owns the fix and tracks the outcome, in every dealership profit center."),
     "how-it-works": (None, "Connect. Identify. Act. Halo connects the systems your stores already run, flags what matters at every rooftop and tracks what happens next."),
     "security": (None, "Your data. Your control. Every dealer group gets a private environment, role-based access, encryption, and AI that isn’t trained on your data."),
-    "about": (None, "Dealer DNA. Silicon Valley ingenuity. Meet Halo’s founders, pairing decades of dealership leadership with deep technology and advertising experience."),
+    "about": (None, "Dealer DNA. Silicon Valley ingenuity. Why Halo exists, and the dealership leadership and technology experience behind it."),
     "faqs": (None, "Straight answers about Halo: what it replaces, how setup works, which systems it connects to, starting with one store, and how your data is handled."),
     "waitlist": (None, "Halo onboards a limited number of dealer groups by invitation. Join the wait list to see Halo on your own stores’ numbers."),
     "privacy-policy": (None, "How Halo handles information on our website and in our platform, and the choices you have."),

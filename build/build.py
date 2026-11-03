@@ -229,8 +229,8 @@ def build_pillar(key):
                            con("hv2-story",
                                con("hv2-story-k", text(st["quote"], "hv2-quote")),
                                con("hv2-story-v", text(st["body"], "hv2-body"))),
-                           heading(st["people_title"], "h2", "hv2-h2 hv2-rows-intro"),
-                           html(people_html(st["people"]))))
+                           heading(st["people_title"], "h2", "hv2-h2 hv2-rows-intro") if st.get("show_people", True) else None,
+                           html(people_html(st["people"])) if st.get("show_people", True) else None))
     if c.get("legal_html"):
         els.append(section("hv2-rows", html(c["legal_html"])))
     if c.get("cta", True):
