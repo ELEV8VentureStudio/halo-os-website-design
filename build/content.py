@@ -76,7 +76,7 @@ PAGES = {
         "visual_html": (
             '<div class="hv2-case-card">'
             '<div class="hv2-case-top"><span>Case · Used inventory · Single rooftop</span>'
-            f'<span class="tag">Illustrative example {ph("replace with pilot data")}</span></div>'
+            '</div>'
             '<ol class="hv2-case-steps">'
             f'<li><div class="when"><b>01 Detected</b>{ph("Day / time")}</div><div>'
             f'<h3>{ph("#")} used units crossed 60 days, priced above the local market.</h3>'
