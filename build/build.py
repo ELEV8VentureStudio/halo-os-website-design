@@ -38,8 +38,8 @@ CSS_END = "/* ==== HALO-V2 END ==== */"
 
 MEDIA = {
     "logo": (1409, f"{SITE}/wp-content/uploads/2026/10/halo-logo.png"),
-    "film": (1476, f"{SITE}/wp-content/uploads/2026/10/halo-film-web-safe.mp4"),  # customer column blurred (tools/)
-    "poster": (1416, f"{SITE}/wp-content/uploads/2026/10/halo-ui-marketing.jpg"),
+    "film": (1712, f"{SITE}/wp-content/uploads/2026/11/halo-film-rev4-web.mp4"),  # Revision 4, generic names (web encode of media 1711)
+    "poster": (1713, f"{SITE}/wp-content/uploads/2026/11/halo-film-rev4-poster.jpg"),
     "ui-inventory": (1415, f"{SITE}/wp-content/uploads/2026/10/halo-ui-inventory.jpg"),
     "ui-sales": (1417, f"{SITE}/wp-content/uploads/2026/10/halo-ui-sales.jpg"),
     "ui-halo-ai": (1414, f"{SITE}/wp-content/uploads/2026/10/halo-ui-halo-ai.jpg"),
