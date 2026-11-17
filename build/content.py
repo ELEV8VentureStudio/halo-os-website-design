@@ -76,7 +76,7 @@ PAGES = {
         "title": "The Halo Effect",
         "num": "02",
         "name": "The Halo Effect",
-        "h1": "What it looks like when Halo catches something.",
+        "h1": "The Problem.<br>The Price.<br>The Payoff.",
         "lead": "One example, start to finish: what Halo found, what it was costing, what the team did, and what happened next.",
         "visual_html": (
             '<div class="hv2-case-card">'
