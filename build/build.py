@@ -38,8 +38,8 @@ CSS_END = "/* ==== HALO-V2 END ==== */"
 
 MEDIA = {
     "logo": (1409, f"{SITE}/wp-content/uploads/2026/10/halo-logo.png"),
-    "film": (1712, f"{SITE}/wp-content/uploads/2026/11/halo-film-rev4-web.mp4"),  # Revision 4, generic names (web encode of media 1711)
-    "poster": (1713, f"{SITE}/wp-content/uploads/2026/11/halo-film-rev4-poster.jpg"),
+    "film": (1741, f"{SITE}/wp-content/uploads/2026/11/halo-film-rev6-web.mp4"),  # Revision 6 (web encode of media 1740)
+    "poster": (1742, f"{SITE}/wp-content/uploads/2026/11/halo-film-rev6-poster.jpg"),
     "ui-inventory": (1415, f"{SITE}/wp-content/uploads/2026/10/halo-ui-inventory.jpg"),
     "ui-sales": (1417, f"{SITE}/wp-content/uploads/2026/10/halo-ui-sales.jpg"),
     "ui-halo-ai": (1414, f"{SITE}/wp-content/uploads/2026/10/halo-ui-halo-ai.jpg"),
